@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "12e7477936b5bf49",
+    "type": "split",
+    "children": [
+      {
+        "id": "2aec466552594f81",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51337b172116d697",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Zwangsbedingungen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Zwangsbedingungen"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "552ec04476129d05",
+    "type": "split",
+    "children": [
+      {
+        "id": "f07a5a69a6d85018",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1f1bfa1f78ddb63",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "08c38ce28b1b6623",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "464d96806e8ebbc2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "701a8f291b0fac63",
+    "type": "split",
+    "children": [
+      {
+        "id": "d82ccc482e967741",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0eacaa989702dc80",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Zwangsbedingungen.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Zwangsbedingungen"
+            }
+          },
+          {
+            "id": "7c2288ecc97d324a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Zwangsbedingungen.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Zwangsbedingungen"
+            }
+          },
+          {
+            "id": "9fcd5f11ddc36988",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d0394da99cccba7f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "1c5cbb5e037760bf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Zwangsbedingungen.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Zwangsbedingungen"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "51337b172116d697",
+  "lastOpenFiles": [
+    "Wanderung Jakob Matthias (20.6. - 21.6.).md",
+    "Zwangsbedingungen.md",
+    "Vektorräume.md",
+    "Transformationsmatrix.md",
+    "Typst.md",
+    "Untitled 2.md",
+    "Taylor Entwicklung.md",
+    "Theorethische Physik II.md",
+    "Stetigkeit linearer Abbildungen.md",
+    "Tactics.md",
+    "Stetigkeit in Metrischen Räumen.md",
+    "Stromdichte.md",
+    "Stetigkeit.md",
+    "Skalarprodukt.md",
+    "Sport.md",
+    "Reguläre Abbildung.md",
+    "Sioyek.md",
+    "README.md",
+    "Polynome.md",
+    "Projektübersicht.md",
+    "Orientierung eines Vektorraums.md",
+    "Normierter Raum.md",
+    "Obsidian.md",
+    "Multiindex Notation.md",
+    "Moduln.md",
+    "Metrischer Raum.md"
+  ]
+}
