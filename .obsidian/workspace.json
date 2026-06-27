@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Differenzierbare Funktionen.md",
+                "file": "Implizite Funktionen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Differenzierbare Funktionen"
+              "title": "Implizite Funktionen"
+            }
+          },
+          {
+            "id": "8969964d8bb7ac2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Multiindex Notation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Multiindex Notation"
             }
           }
         ]
@@ -199,11 +213,14 @@
   },
   "active": "51337b172116d697",
   "lastOpenFiles": [
+    "Extremwertaufgaben.md",
+    "Taylor Entwicklung.md",
+    "Multiindex Notation.md",
+    "Differenzierbare Funktionen.md",
     "Anfangswertproblem Existenz von Lösungen.md",
     "~/Obsidianan/anki_cache",
     "~/Obsidianan",
     "~",
-    "Differenzierbare Funktionen.md",
     "anki_export.typ",
     "ankify.py",
     "Banachscher Fixpunktsatz.md",
@@ -229,7 +246,6 @@
     "Transformationsmatrix.md",
     "Typst.md",
     "Untitled 2.md",
-    "Taylor Entwicklung.md",
     "Theorethische Physik II.md",
     "Stetigkeit linearer Abbildungen.md",
     "Tactics.md",
@@ -242,8 +258,6 @@
     "Sioyek.md",
     "README.md",
     "Polynome.md",
-    "Projektübersicht.md",
-    "Orientierung eines Vektorraums.md",
-    "Normierter Raum.md"
+    "Projektübersicht.md"
   ]
 }

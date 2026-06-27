@@ -87,13 +87,11 @@ $D subset RR^n$
 > $f$ ist **lokal Lipschitz stetig**: 
 > $$ norm(f(y) - f(x))_2 <= M norm(y - x)_2 quad forall y in B_epsilon(x)$$
 > mit $M := sup_(z in B_epsilon(x)) norm(J_f(z))_2$
-> (Falls $D$ **konvex** ist, ist $f$ auf ganz $D$ Lipschitz stetig)
+> (Falls $D$ **konvex** ist und $M < infinity$, ist $f$ auf ganz $D$ Lipschitz stetig)
+
 
 Hilfslemma:
 
-> [!Lemma]
-> Sei $v : [a, b] -> RR^n$ und $A : [a,b] -> RR^(n times m)$ **stetig**. Dann gilt:
-> TODO
 
 > [!lemma] Lemma von Gronwall
 > Sei $w(t) >= 0$ stückweise stetig und genüge für $a,b in RR$ die Integralungleichung

@@ -24,11 +24,11 @@ Sei $D subset RR^n$ offen, $f : D -> RR$
 > $A$ ist **positiv definit** falls $(x, A x)_2 > 0 quad forall x eq.not 0$ (=> alle Eigenwerte > 0)
 
 
-> [!Lemma] Hauptminorenkriterium
+> Hauptminorenkriterium
 > Sei $A$ symmetrisch
 > A ist positiv definit $<=>$ $$det(a_11) dot det(mat(a_11, a_12; a_21, a_22)) det("3x3 Matrix")dots > 0$$
 
-A ist negativ genau dann, wenn $-A$ postiv definit ist (vorzeichen von der Determinante immer abwechselnd)
+A ist negativ definit genau dann, wenn $-A$ postiv definit ist (vorzeichen von der Determinante immer abwechselnd)
 
 
 
