@@ -193,11 +193,33 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "51337b172116d697",
   "lastOpenFiles": [
+    "ANA 2/collection.media/paste-fcecbc308f5fa6d572f0e7500a5fb75f084393b2.jpg",
+    "ANA 2/collection.media/paste-f8952c348ea00417b614cc7999c8bde857c453fc.jpg",
+    "ANA 2/collection.media/paste-f79c72d43c3527b566040dfd410f2ba230224d92.jpg",
+    "ANA 2/collection.media/paste-f22bf997449a22170ae7c36c1cb0ba6a928238ab.jpg",
+    "ANA 2/collection.media/paste-eb920d6abd1aa00e5ad55f5fb76b746038bd0ff7.jpg",
+    "ANA 2/collection.media/paste-e985dbee2e6f2a2befe2da4a00dc390fc228f1b3.jpg",
+    "ANA 2/collection.media/paste-e96e78c56d69fa74e56bc303cac4aebb761b5b2d.jpg",
+    "ANA 2/collection.media/paste-e6a9cf70b05623ef8a56a962092d6db46c89227e.jpg",
+    "ANA 2/collection.media/paste-e5b57aa61c134dd17ae4bf19b24ef03b2d1e0991.jpg",
+    "ANA 2/collection.media/paste-e44c9ba64de9be268352282a26ff3d2e05abf509.jpg",
+    "ANA 2/collection.media/paste-e2a7bc1e696b0e494ed17b754f83d66356c8e9a2.jpg",
+    "ANA 2/backups/backup-2026-06-23-14.59.20.colpkg",
+    "ANA 2/backups/backup-2026-06-23-14.25.23.colpkg",
+    "ANA 2/backups/backup-2026-06-23-12.28.07.colpkg",
+    "ANA 2/backups/backup-2026-06-23-11.39.56.colpkg",
+    "ANA 2/backups/backup-2026-06-23-11.09.36.colpkg",
+    "ANA 2/collection.media.db2",
+    "ANA 2/collection.media",
+    "ANA 2/collection.anki2-wal",
+    "ANA 2/collection.anki2",
+    "ANA 2/backups",
     "Zwangsbedingungen.md",
     "Wanderung Jakob Matthias (20.6. - 21.6.).md",
     "Vektorräume.md",
@@ -222,7 +244,6 @@
     "Normierter Raum.md",
     "Obsidian.md",
     "Multiindex Notation.md",
-    "Moduln.md",
-    "Metrischer Raum.md"
+    "Moduln.md"
   ]
 }
