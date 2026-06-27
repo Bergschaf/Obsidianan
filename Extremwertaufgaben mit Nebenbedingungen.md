@@ -8,11 +8,12 @@ Wir suchen $hat(x) in D$, s.h.
 
 
 ## Multiplikatorregel von lagrange
+> [!Satz] Multiplikatorregel von Lagrange
 Notwendige Bed. 1. Ordnung für lokales Minimum unter Nebenbedingungen
 $f : D -> RR$, $g : D -> RR^k$ partiell stetig diffbar
 Sei 
-- $hat(x) in D$ ein Extremum unter der Nebenbedingung $g(x) = 0$ und
-- Gradienten $nabla g_1(hat(x)), dots, nabla g_k (hat(x))$ linear unabhängig in $RR^n$
+>- $hat(x) in D$ ein Extremum unter der Nebenbedingung $g(x) = 0$ und
+>- Gradienten $nabla g_1(hat(x)), dots, nabla g_k (hat(x))$ linear unabhängig in $RR^n$
 Dann gilt
 $$ exists hat(lambda) = vec(hat(lambda_1), dots.v, hat(lambda_k)) in RR^k quad "mit" sum_(i=1)^k hat(lambda_i) nabla g_i (hat(x)) = nabla f(hat(x)) <=> nabla g(hat(x)) hat(lambda) = nabla f(hat(x)) $$
 

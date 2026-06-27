@@ -367,22 +367,13 @@ $A$ ist **positiv definit** falls $(x, A x)_2 > 0 quad forall x eq.not 0$ (=> al
 #note(
   "card-36",
   data: (
-    Front: "Lemma: Hauptminorenkriterium",
-    Back: [Sei $A$ symmetrisch
-A ist positiv definit $<=>$  $ det(a_11) dot det(mat(a_11, a_12; a_21, a_22)) det("3x3 Matrix")dots > 0 $ ],
-  ),
-)
-
-#note(
-  "card-37",
-  data: (
     Front: "Definition: Fourier-Koeffizienten",
     Back: [ $ c_k (f) := 1/(2pi) (f, e^(i k x)) =  1/(2pi) integral_0^(2pi) f(x) e^(i k x) d x $ ],
   ),
 )
 
 #note(
-  "card-38",
+  "card-37",
   data: (
     Front: "Definition: n-te Partialsumme",
     Back: [ $ s_n (f) := sum_(k = -n)^n c_k e^(i k x) $ ],
@@ -390,7 +381,7 @@ A ist positiv definit $<=>$  $ det(a_11) dot det(mat(a_11, a_12; a_21, a_22)) de
 )
 
 #note(
-  "card-39",
+  "card-38",
   data: (
     Front: "Lemma: ",
     Back: [$f in cal(R)[0, 2pi]$ $2pi$ periodisch.
@@ -399,7 +390,7 @@ A ist positiv definit $<=>$  $ det(a_11) dot det(mat(a_11, a_12; a_21, a_22)) de
 )
 
 #note(
-  "card-40",
+  "card-39",
   data: (
     Front: "Lemma: Besselsche Ungleichung",
     Back: [ $  2pi sum_(k = - infinity)^infinity abs(c_k)^2 <= norm(f)^2_2 $ ],
@@ -407,7 +398,7 @@ A ist positiv definit $<=>$  $ det(a_11) dot det(mat(a_11, a_12; a_21, a_22)) de
 )
 
 #note(
-  "card-41",
+  "card-40",
   data: (
     Front: "Satz: $L^2$ Konvergenz",
     Back: [ $ norm(f)^2 = 2 pi sum_(k = - infinity)^infinity abs(c_k)² $ ],
@@ -415,7 +406,7 @@ A ist positiv definit $<=>$  $ det(a_11) dot det(mat(a_11, a_12; a_21, a_22)) de
 )
 
 #note(
-  "card-42",
+  "card-41",
   data: (
     Front: "Satz: Gleichmäßige Konvergenz",
     Back: [Sei $f : RR -> CC$ eine $2pi$-periodische, stetige Funktion, die *stückweise stetig differenzierbar* ist.
@@ -424,7 +415,7 @@ Dann konvergiert die Fourier-Reihe von $f$ gleichmäßig gegen $f$],
 )
 
 #note(
-  "card-43",
+  "card-42",
   data: (
     Front: "Definition: Punktweise Konvergenz",
     Back: [-	 $ f_k (x) -> f(x) "für " k -> infinity quad forall x in E $ ],
@@ -432,7 +423,7 @@ Dann konvergiert die Fourier-Reihe von $f$ gleichmäßig gegen $f$],
 )
 
 #note(
-  "card-44",
+  "card-43",
   data: (
     Front: "Definition: Gleichmäßige Konvergenz",
     Back: [ $ forall epsilon > 0, exists k* in NN, "sodass" quad norm(f_k (x) - f(x)) < epsilon quad forall k >= k* quad forall x in E $ ],
@@ -440,7 +431,7 @@ Dann konvergiert die Fourier-Reihe von $f$ gleichmäßig gegen $f$],
 )
 
 #note(
-  "card-45",
+  "card-44",
   data: (
     Front: "Satz: ",
     Back: [Sei $X subset RR^n$ offen, $Y subset RR^m$ offen, $F in C^1(X times Y, RR^m)$ stetig diffbar und $(hat(x), hat(y)) in X times Y$ mit $F(hat(x), hat(y)) = 0$.
@@ -454,7 +445,7 @@ Die $m times m$ matrix $D_y F(x,y)$ sei im Punkt $(hat(x), hat(y))$ invertierbar
 )
 
 #note(
-  "card-46",
+  "card-45",
   data: (
     Front: "Merkregel: ",
     Back: [TODO im aufschrieb nachschauen (05.6.)],
@@ -462,7 +453,7 @@ Die $m times m$ matrix $D_y F(x,y)$ sei im Punkt $(hat(x), hat(y))$ invertierbar
 )
 
 #note(
-  "card-47",
+  "card-46",
   data: (
     Front: "Definition: ",
     Back: [$D subset R^n$ heißt **konvex**, genau dann, wenn 
@@ -472,7 +463,7 @@ Die $m times m$ matrix $D_y F(x,y)$ sei im Punkt $(hat(x), hat(y))$ invertierbar
 )
 
 #note(
-  "card-48",
+  "card-47",
   data: (
     Front: "Untermannigfaltikgeit (reguläre Nullstellenmenge): ",
     Back: [Eine Teilmegne $M subset RR^n$ heißt $d$-dimensionale **untermannigfaltigkeit** der Klasse $C^l$ $(l >= 1, d <= n -1)$, wenn es zu jedem Punkt $a in M$ eine offene Umgebung $U in RR^n$ und ==$l$-mal stetig diffbare Funktionen== $g_1, dots, g_(n-d) : U -> RR$ gibt, so dass gilt
@@ -487,7 +478,7 @@ Bedingung:
 )
 
 #note(
-  "card-49",
+  "card-48",
   data: (
     Front: "Untermannigfaltigkeit als Graph: ",
     Back: [Eine Teilmenge $M subset RR^n$ ist eine d-dimensionale Untermannigfaltigkeit der Klasse $C^l$ genau dann, wenn zu jedem Punkt $a in M$
@@ -500,7 +491,7 @@ und eine $l$-mal stetig diffbare Abbildung $phi : U' -> U''$ gibt, so dass
 )
 
 #note(
-  "card-50",
+  "card-49",
   data: (
     Front: "Untermannigfaltikgeit als $d$-dimensionale Ebene (lost): ",
     Back: [Sei $E_d subset RR^n$ die $d$ dimensionale Ebene
@@ -514,7 +505,7 @@ d.h. durch eine lokale Koordinatentransformation der Klasse $C^l$ läßt sich M 
 )
 
 #note(
-  "card-51",
+  "card-50",
   data: (
     Front: "defintion: Reguläre Parametrisierung/Immersion",
     Back: [Sei $W subset RR^d$ offen
@@ -525,7 +516,7 @@ EIne stetig diffbare Abbildung $Phi : W -> RR^n$ heißt **Immersion** (oder regu
 )
 
 #note(
-  "card-52",
+  "card-51",
   data: (
     Front: "Satz: Parametrisierungssatz",
     Back: [Eine Teilmenge $M subset RR^n$ ist genau dann eine d-dimensionale Untermannigfaltig der Klasse $C$, wenn es jedem Punkt $a in M$
@@ -537,7 +528,7 @@ Der Homöomorphismus $Phi : W -> (M inter U) subset RR^n$ heißt lokale **parame
 )
 
 #note(
-  "card-53",
+  "card-52",
   data: (
     Front: "Definition: Tangentialraum",
     Back: [Sei ${} M subset RR^n {}$ eine Untermannigfaltigkeit und $a in M$ ein Punkt.
@@ -550,7 +541,7 @@ Der **Tangentialraum** $T_a M$ and M in a besteht aus allen Tangentialvektoren a
 )
 
 #note(
-  "card-54",
+  "card-53",
   data: (
     Front: "Satz: Tangentialraum",
     Back: [Sei $M subset RR^n$ eine d-dimensionale Untermannigfaltigkeit und $a in M$. Dan gilt.
@@ -566,7 +557,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-55",
+  "card-54",
   data: (
     Front: "Definition: Stetigkeit",
     Back: [Eine Funktion $F : E -> Y$ heißt stetig in $a in E$, falls für jede Folge $(x_k)_(k in NN)$ in $E$ mit $x_k ->_(k -> infinity) a$ gilt $f(x_k) ->_(k -> infinity) f(a)$],
@@ -574,7 +565,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-56",
+  "card-55",
   data: (
     Front: "lemma: Stetige funktionen nach $RR^n$",
     Back: [Eine Funktion $f : E -> RR^n$ ist genau dann in $a in E$ stetig, wenn jede Komponente $f_1, dots, f_n$ stetig ist.],
@@ -582,7 +573,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-57",
+  "card-56",
   data: (
     Front: "lemma: $epsilon$-$delta$ Kriterium",
     Back: [$f : E -> Y$ ist genau dann stetig in $a$, wenn für jedes $epsilon > 0$ ein $delta > 0$ existiert sodass $forall x in E$ gilt  $ abs(x-a) < delta => abs(f(x) - f(a)) < epsilon $ ],
@@ -590,7 +581,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-58",
+  "card-57",
   data: (
     Front: "lemma: Topologisches Kriterium der Stetigkeit",
     Back: [$f : X -> Y$
@@ -601,7 +592,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-59",
+  "card-58",
   data: (
     Front: "Definition: ",
     Back: [Sei $(R, +, dot)$ ein kommutativer Ring. Ein **R-Modul** $(M, +, dot)$ hat 
@@ -614,7 +605,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-60",
+  "card-59",
   data: (
     Front: "Definition: ",
     Back: [Eine Abbildung $f : M_1 -> M_2$ heißt ein **Homomorphismus von Moduln** wenn gilt:
@@ -624,7 +615,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-61",
+  "card-60",
   data: (
     Front: "Definition: ",
     Back: [Ein unitärer R-Modul $(M, +, dot)$ heißt **frei**, wenn es ein linear unabhängiges Erzeugendensystem (eine **Basis**) gibt.
@@ -633,7 +624,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-62",
+  "card-61",
   data: (
     Front: "Satz: ",
     Back: [Sei $R$ kommutativer Ring **mit Eins**, der **nicht der Nullring ist**. Sei $(M, +, dot)$ ein endlich freier, unitärer R-Modl. Dann haben alle Basen von M dieselbe endliche Kardinalität],
@@ -641,7 +632,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-63",
+  "card-62",
   data: (
     Front: "Definition: Multiindex Notation",
     Back: [Für $alpha = (alpha_1, dots, alpha_n) in NN^n_0$
@@ -654,7 +645,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-64",
+  "card-63",
   data: (
     Front: "Definition: Normäquivalenz",
     Back: [ $ exists m, M > 0, m norm(x)_1 <= norm(x)_2 <= M norm(x)_1 quad forall x  $ ],
@@ -662,7 +653,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-65",
+  "card-64",
   data: (
     Front: "Definition: Polynom",
     Back: [- Sei $(R, +, dot)$ ein kommutativer Ring mit Eins
@@ -674,7 +665,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-66",
+  "card-65",
   data: (
     Front: "Definition: Reguläre Abbilung",
     Back: [$f : D -> RR^n$ heißt **regulär** in $hat(x) in D$, wenn $exists B_delta (hat(x)) subset D$ sodass 
@@ -684,7 +675,7 @@ Dann gilt  $ T_a M = {v in RR^n | (v, nabla g_j (a)) = 0 forall j = 1, dots, n -
 )
 
 #note(
-  "card-67",
+  "card-66",
   data: (
     Front: "Satz: Umkehrabbildung (lokal!) (Inverse Function Theorem)",
     Back: [Sei $f  : D -> RR^n$ **regulär** in $hat(x) in D$
@@ -697,7 +688,7 @@ Außerdem: Die Umkehrabildung $f^(-1) : U(hat(y)) -> V(hat(x))$ ist regulär in 
 )
 
 #note(
-  "card-68",
+  "card-67",
   data: (
     Front: "Satz: Cauchy-Schwarz Ungleichung",
     Back: [$(a,b) in V$
@@ -706,7 +697,7 @@ Außerdem: Die Umkehrabildung $f^(-1) : U(hat(y)) -> V(hat(x))$ ist regulär in 
 )
 
 #note(
-  "card-69",
+  "card-68",
   data: (
     Front: "Satz: ",
     Back: [Seien $(X, d_X)$ und $(Y,d_y)$ zwei metrische Räumen $K subset X$ kompakt und $f : K -> Y$ stetig. Dann ist ${} f(K)subset Y$ kompakt],
@@ -714,7 +705,7 @@ Außerdem: Die Umkehrabildung $f^(-1) : U(hat(y)) -> V(hat(x))$ ist regulär in 
 )
 
 #note(
-  "card-70",
+  "card-69",
   data: (
     Front: "Satz: Satz vom Extremum",
     Back: [-	Sei $(X,d)$ metrischer Raum $K subset X$ kompakt und $f : K -> RR$ stetig.
@@ -725,7 +716,7 @@ Außerdem: Die Umkehrabildung $f^(-1) : U(hat(y)) -> V(hat(x))$ ist regulär in 
 )
 
 #note(
-  "card-71",
+  "card-70",
   data: (
     Front: "Definition: Zusammenhängende Mengen",
     Back: [$(X, d_X)$ metrischer Raum $A subset X$
@@ -735,7 +726,7 @@ $A$ heißt **zusammenhängend**, wenn für alle offenen Teilmengen $U_1, U_2 sub
 )
 
 #note(
-  "card-72",
+  "card-71",
   data: (
     Front: "Satz: Stetiges Bild zusammenhängender Mengen (Analog zu Zwischenwertsatz)",
     Back: [$K subset X$
@@ -745,7 +736,7 @@ TODO Beweis anschauen],
 )
 
 #note(
-  "card-73",
+  "card-72",
   data: (
     Front: "Satz: Stetigkeit der Umkehrfunktion",
     Back: [Seien $(X, d_x)$ und $(Y, d_y)$ zwei metrische Räume, $K subset X$ **kompakt** und $f :  -> B subset Y$ **stetig**
@@ -754,7 +745,7 @@ Dann ist die Umkehrfunktion ${} f^(-1) : B -> K$ stetig],
 )
 
 #note(
-  "card-74",
+  "card-73",
   data: (
     Front: "Satz: Gleichmäßige Stetigkeit",
     Back: [Seien X, Y metrische Räume, $F subset E subset X$ und $f : E -> Y$
@@ -764,7 +755,7 @@ $f$ heißt **gleichmäßig stetig in $F$**, wenn es zu jedem $epsilon > 0$ ein $
 )
 
 #note(
-  "card-75",
+  "card-74",
   data: (
     Front: "Lipschitz Stetigkeit: ",
     Back: [Seien X, Y metrische Räume, $F subset E subset X$ und $f : E -> Y$
@@ -774,7 +765,7 @@ Dann heißt $f$ **Lipschitzstetig in $F$**, falls es eine Konstante $L > 0$ gibt
 )
 
 #note(
-  "card-76",
+  "card-75",
   data: (
     Front: "note: Definition #definition",
     Back: [Eine lineare Abbildung $f : V -> W$ von normierten VR $(V, norm( dot)_V)$ und $(W, norm(dot)_W)$  ist stetig, wenn die Operatornorm
@@ -784,7 +775,7 @@ Dann heißt $f$ **Lipschitzstetig in $F$**, falls es eine Konstante $L > 0$ gibt
 )
 
 #note(
-  "card-77",
+  "card-76",
   data: (
     Front: "Satz: Stetigkeit linearer Abbildungen",
     Back: [$A : V -> W$
@@ -794,7 +785,7 @@ $A$ ist genau dann stetig, wenn es eine Konstante $C in (0, infinity)$ gibt mit
 )
 
 #note(
-  "card-78",
+  "card-77",
   data: (
     Front: "Satz: ",
     Back: [$x in D$, $h in RR^n$ mit ${x + t h | t in [0,1]} subset D$ und $f in C^(r+1)(D, RR)$
@@ -805,7 +796,7 @@ Dann existiert ein $theta in [0,1]$ sodass
 )
 
 #note(
-  "card-79",
+  "card-78",
   data: (
     Front: "lemma: Erste und zweite Mehrdimensionale Taylor-Entwicklung",
     Back: [$f in C^1(D, RR)$, $x in D$, $h in RR^n$ mit $x + t h in D quad forall t in [0,1]$
@@ -817,7 +808,7 @@ mit der Hesse matrix $H_f (x)$],
 )
 
 #note(
-  "card-80",
+  "card-79",
   data: (
     Front: "Definition: Mehrdimensionale Taylorreihen",
     Back: [Sei $f : D -> RR$ beliebig oft diffbar:
@@ -826,7 +817,7 @@ mit der Hesse matrix $H_f (x)$],
 )
 
 #note(
-  "card-81",
+  "card-80",
   data: (
     Front: "Lemma: Konvergenz von mehrdimensionalen Taylorreihen",
     Back: [Taylor Reihe konvergiert, wenn  $ R^f_(r+1)(x,h) ->_(r -> infinity) 0, quad x in D $ 
@@ -837,7 +828,7 @@ hinreichend dafür:
 )
 
 #note(
-  "card-82",
+  "card-81",
   data: (
     Front: "Satz: Überdeckungskompakt $<=>$ Folgenkompakt",
     Back: [Sei $(X, d)$ ein Metrischer Raum. $K subset X$ ist Überdeckungskompakt genau dann, wenn $K$ folgenkompakt ist],
@@ -845,7 +836,7 @@ hinreichend dafür:
 )
 
 #note(
-  "card-83",
+  "card-82",
   data: (
     Front: "note: Definition",
     Back: [tangent vector at p, the directional derivative of f in the direction v at p is defined to
@@ -854,7 +845,7 @@ hinreichend dafür:
 )
 
 #note(
-  "card-84",
+  "card-83",
   data: (
     Front: "note: Definition",
     Back: [it is reflexive, symmetric, and transitive. The equivalence class of (f,U) is called the
@@ -865,7 +856,7 @@ RnC∞
 )
 
 #note(
-  "card-85",
+  "card-84",
   data: (
     Front: "note: Definition",
     Back: [|
@@ -878,7 +869,7 @@ p . Denote the set of all derivations at p
 )
 
 #note(
-  "card-86",
+  "card-85",
   data: (
     Front: "note: Definition",
     Back: [A vector field X on an open subset U of Rn is a function that assigns to each point p in U a tangent vector Xp in Tp(Rn).
@@ -887,7 +878,7 @@ p . Denote the set of all derivations at p
 )
 
 #note(
-  "card-87",
+  "card-86",
   data: (
     Front: "note: Definition",
     Back: [Definition 2.4. If R is a commutative ring with identity, then a (left) R-module is an
@@ -897,7 +888,7 @@ abelian group A with a scalar multiplication map
 )
 
 #note(
-  "card-88",
+  "card-87",
   data: (
     Front: "note: Definition",
     Back: [Definition 3.10. A k-linear function f : V k →R is symmetric if
@@ -906,7 +897,7 @@ abelian group A with a scalar multiplication map
 )
 
 #note(
-  "card-89",
+  "card-88",
   data: (
     Front: "note: Definition",
     Back: [for all permutations σ ∈Sk; it is alternating if
@@ -915,7 +906,7 @@ abelian group A with a scalar multiplication map
 )
 
 #note(
-  "card-90",
+  "card-89",
   data: (
     Front: "note: Definition",
     Back: [a new k-linear function σ f by
@@ -924,7 +915,7 @@ abelian group A with a scalar multiplication map
 )
 
 #note(
-  "card-91",
+  "card-90",
   data: (
     Front: "note: Definition",
     Back: [is called a left action of G on X if
@@ -933,7 +924,7 @@ abelian group A with a scalar multiplication map
 )
 
 #note(
-  "card-92",
+  "card-91",
   data: (
     Front: "note: Definition",
     Back: [S f = ∑
@@ -943,7 +934,7 @@ abelian group A with a scalar multiplication map
 )
 
 #note(
-  "card-93",
+  "card-92",
   data: (
     Front: "note: Definition",
     Back: [Af = ∑
@@ -953,7 +944,7 @@ abelian group A with a scalar multiplication map
 )
 
 #note(
-  "card-94",
+  "card-93",
   data: (
     Front: "note: Definition",
     Back: [of the wedge product, also called the exterior product: for f ∈Ak(V) and g ∈Aℓ(V),
@@ -962,7 +953,7 @@ abelian group A with a scalar multiplication map
 )
 
 #note(
-  "card-95",
+  "card-94",
   data: (
     Front: "note: Definition",
     Back: [The cotangent space to Rn at p, denoted by T ∗
@@ -973,7 +964,7 @@ Rn, is defined to be the
 )
 
 #note(
-  "card-96",
+  "card-95",
   data: (
     Front: "note: Definition",
     Back: [parallel with the definition of a vector field, a covector field or a differential 1-form
@@ -985,7 +976,7 @@ on an open subset U of Rn is a function ω that assigns to each point p in U a c
 )
 
 #note(
-  "card-97",
+  "card-96",
   data: (
     Front: "note: Definition",
     Back: [From any Cfunction f : U →R, we can construct a 1-form df, called the dif-
@@ -995,7 +986,7 @@ ferential of f, as follows. For p ∈U and Xp ∈TpU, define
 )
 
 #note(
-  "card-98",
+  "card-97",
   data: (
     Front: "note: Definition",
     Back: [Definition 5.1. A topological space M is locally Euclidean of dimension n if every
@@ -1004,7 +995,7 @@ ferential of f, as follows. For p ∈U and Xp ∈TpU, define
 )
 
 #note(
-  "card-99",
+  "card-98",
   data: (
     Front: "note: Definition",
     Back: [Definition 5.6.
@@ -1014,7 +1005,7 @@ A Catlas or simply an atlas on a locally Euclidean space M is a
 )
 
 #note(
-  "card-100",
+  "card-99",
   data: (
     Front: "note: Definition",
     Back: [An atlas M on a locally Euclidean space is said to be maximal if it is not contained
@@ -1023,7 +1014,7 @@ A Catlas or simply an atlas on a locally Euclidean space M is a
 )
 
 #note(
-  "card-101",
+  "card-100",
   data: (
     Front: "note: Definition",
     Back: [with a maximal atlas. The maximal atlas is also called a differentiable structure
@@ -1032,7 +1023,7 @@ A Catlas or simply an atlas on a locally Euclidean space M is a
 )
 
 #note(
-  "card-102",
+  "card-101",
   data: (
     Front: "note: Definition",
     Back: [Thus, for p ∈U, (x1(p),...,xn(p)) is a point in Rn. The functions x1,...,xn are
@@ -1042,7 +1033,7 @@ called coordinates or local coordinates on U. By abuse of notation, we sometimes
 )
 
 #note(
-  "card-103",
+  "card-102",
   data: (
     Front: "note: Definition",
     Back: [Definition 6.1. Let M be a smooth manifold of dimension n. A function f : M →R
@@ -1052,7 +1043,7 @@ is said to be C∞or smooth at a point p in M if there is a chart (U,φ) about p
 )
 
 #note(
-  "card-104",
+  "card-103",
   data: (
     Front: "note: Definition",
     Back: [Definition 6.4. Let F : N →M be a map and h a function on M. The pullback of h
@@ -1062,7 +1053,7 @@ by F, denoted by F∗h, is the composite function h ◦F.
 )
 
 #note(
-  "card-105",
+  "card-104",
   data: (
     Front: "note: Definition",
     Back: [Definition 6.5. Let N and M be manifolds of dimension n and m, respectively. A
@@ -1072,7 +1063,7 @@ by F, denoted by F∗h, is the composite function h ◦F.
 )
 
 #note(
-  "card-106",
+  "card-105",
   data: (
     Front: "note: Definition",
     Back: [A diffeomorphism of manifolds is a bijective C∞map F : N →M whose inverse F−1
@@ -1082,7 +1073,7 @@ is also C∞. According to the next two propositions, coordinate maps are diffeo
 )
 
 #note(
-  "card-107",
+  "card-106",
   data: (
     Front: "note: Definition",
     Back: [Definition 6.20.
@@ -1092,7 +1083,7 @@ A Lie group1 is a C∞manifold G having a group structure such
 )
 
 #note(
-  "card-108",
+  "card-107",
   data: (
     Front: "warning: Importan",
     Back: [If x,y, and z are the coordinates on R3, then dx, dy, and dz are 1-forms on R3. In
@@ -1101,7 +1092,7 @@ A Lie group1 is a C∞manifold G having a group structure such
 )
 
 #note(
-  "card-109",
+  "card-108",
   data: (
     Front: "quote: Highlight",
     Back: [tions at p. Under the vector space isomorphism Tp(Rn) ≃Dp(Rn), the standard basis
@@ -1112,7 +1103,7 @@ tives. From now on, we will make this identification and write a tangent vector
 )
 
 #note(
-  "card-110",
+  "card-109",
   data: (
     Front: "quote: Highlight",
     Back: [One may think of a tangent vector as a function on the second argument of this
@@ -1121,7 +1112,7 @@ tives. From now on, we will make this identification and write a tangent vector
 )
 
 #note(
-  "card-111",
+  "card-110",
   data: (
     Front: "quote: Highlight",
     Back: [One may think of a tangent vector as a function on the second argument of this
@@ -1130,7 +1121,7 @@ tives. From now on, we will make this identification and write a tangent vector
 )
 
 #note(
-  "card-112",
+  "card-111",
   data: (
     Front: "quote: Highlight",
     Back: [pairing: ⟨Xp, · ⟩. The differential (df)p at p is a function on the first argument of the
@@ -1141,7 +1132,7 @@ pairing:
 )
 
 #note(
-  "card-113",
+  "card-112",
   data: (
     Front: "quote: Highlight",
     Back: [pendix A. A topological space is second countable if it has a countable basis. A
@@ -1150,7 +1141,7 @@ pairing:
 )
 
 #note(
-  "card-114",
+  "card-113",
   data: (
     Front: "quote: Highlight",
     Back: [In this terminology, a function f on M is C∞on a chart (U,φ) if and only if its
@@ -1160,7 +1151,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-115",
+  "card-114",
   data: (
     Front: "note: Definition",
     Back: [Definition 20.1 (Dualraum, Linearform).
@@ -1169,7 +1160,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-116",
+  "card-115",
   data: (
     Front: "note: Definition",
     Back: [Satz 20.10 (Basis des Dualraumes).
@@ -1178,7 +1169,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-117",
+  "card-116",
   data: (
     Front: "note: Definition",
     Back: [Satz 21.11 (vier fundamentale Unterräume zu einer linearen AbbildungAoC19).
@@ -1187,7 +1178,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-118",
+  "card-117",
   data: (
     Front: "note: Definition",
     Back: [Lemma 21.15 (Dualraum eines Faktorraumes).
@@ -1196,7 +1187,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-119",
+  "card-118",
   data: (
     Front: "note: Definition",
     Back: [Definition 23.6 (Tensorprodukt, Tensorproduktraum, universelle bilineare Abbildung).
@@ -1205,7 +1196,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-120",
+  "card-119",
   data: (
     Front: "note: Definition",
     Back: [Definition 23.16 (Rang eines Tensors).
@@ -1214,7 +1205,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-121",
+  "card-120",
   data: (
     Front: "note: Definition",
     Back: [Definition 23.30 (Tensorprodukt linearer Abbildungen).
@@ -1223,7 +1214,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-122",
+  "card-121",
   data: (
     Front: "note: Definition",
     Back: [Definition 24.16 (Hypermatrix, vgl. Definition 15.1).
@@ -1232,7 +1223,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-123",
+  "card-122",
   data: (
     Front: "note: Definition",
     Back: [Definition 26.1 (Permutation eines Tensors vom Typ (𝑟, 0)).
@@ -1241,7 +1232,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-124",
+  "card-123",
   data: (
     Front: "note: Definition",
     Back: [(𝑖) Ein Tensor 𝑡∈𝑉⊗heißt (total) symmetrisch (englisch: (totally) symmetric tensor),
@@ -1250,7 +1241,7 @@ pullback (φ−1)∗f by φ−1 is C∞on the subset φ(U) of Euclidean space.
 )
 
 #note(
-  "card-125",
+  "card-124",
   data: (
     Front: "abstract: Lemma",
     Back: [Satz 26.8 (Dimension der Unterräume 𝑉
@@ -1262,7 +1253,7 @@ alt , vgl. Lemma 15.32).
 )
 
 #note(
-  "card-126",
+  "card-125",
   data: (
     Front: "warning: Importan",
     Back: [(Alternierende Tensoren erkennen lineare Abhängigkeit)

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Implizite Funktionen.md",
+                "file": "Analysis II.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Implizite Funktionen"
+              "title": "Analysis II"
             }
           },
           {
@@ -213,6 +213,10 @@
   },
   "active": "51337b172116d697",
   "lastOpenFiles": [
+    "Mannigfaltigkeiten.md",
+    "Extremwertaufgaben mit Nebenbedingungen.md",
+    "Reguläre Abbildung.md",
+    "Implizite Funktionen.md",
     "Extremwertaufgaben.md",
     "Taylor Entwicklung.md",
     "Multiindex Notation.md",
@@ -254,10 +258,6 @@
     "Stetigkeit.md",
     "Skalarprodukt.md",
     "Sport.md",
-    "Reguläre Abbildung.md",
-    "Sioyek.md",
-    "README.md",
-    "Polynome.md",
-    "Projektübersicht.md"
+    "Sioyek.md"
   ]
 }
