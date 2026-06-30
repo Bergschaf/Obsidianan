@@ -27,4 +27,17 @@ eine lineare AWA
 >  $$ Phi'(t) = A(t)Phi(t), quad forall t >= t_0, quad Phi(t_0) = bb(1)$$
 
 
+> [!satz] Inhomogene lineare Systeme
+> $$y'(t) = A(t) y(t) + b(t)$$
+> Seien $A : [t_0, infinity) -> RR^(n times n), b : [t_0, infinity) -> RR^n$ **stetig**. Dann gilt:
+> - Für einen konstanten Vektor $c in RR^n$ ist 
+>  $$y_b (t) := Phi(t) (integral^t_(t_0) Phi^(-1)(s)b(s)d s + c) $$
+>   eine partiukäre Lösung des inhomogenen linearen Systems.
+ - Alle Lösungen der inhomogenen Gleichung haben die Form:
+>    $$y(t) = y_b(t) + nu(t) $$
+>    wobei $nu in H$ (Lösungsraum des homogenen systems).
+ - Gilt $c = y_0$, dann gilt $y_b(t_0) = y_0$
+
+
+
 

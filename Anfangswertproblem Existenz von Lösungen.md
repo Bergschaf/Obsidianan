@@ -100,7 +100,7 @@ ohne lipschitz
 
 x-stabil am Zeitpunkt $t_0$ => x-stabil am zeitpunkt $t > t_0$
 
-> [!definition] Monotone AWA
+> [!definition] Monotone AWA (stark Monoton)
 > Die Funktion $f(t,x)$ genügt einer **Monotoniebedingung**, falls ein $lambda > 0$ existiert, sodass für alle $(t,x), (t,y) in D$ gilt:
 > $$ - (f(t,x) - f(t,y)) dot (x - y) >= lambda norm(x -y)^2_2 $$
 > Eine AWA die der Monotiniebedingung genügt heißt **stark monoton**

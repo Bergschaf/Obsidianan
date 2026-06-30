@@ -50,5 +50,6 @@ TODO musterlösungen von zetteln anschauen
 [[Anfangswertproblem Existenz von Lösungen]]
 [[Lineare Systeme]]
 
+[[Lösungsmethoden]]
 TODO Mittel- und Zwischenwertsätze aufschreiben
 
