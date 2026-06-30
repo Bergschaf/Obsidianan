@@ -19,7 +19,7 @@ Sei $D subset RR^n$ offen, $f : D -> RR$
 
 
 
-> [!Definition]
+> [!Definition] positiv definit
 > Symm. Matrix $A$.
 > $A$ ist **positiv definit** falls $(x, A x)_2 > 0 quad forall x eq.not 0$ (=> alle Eigenwerte > 0)
 

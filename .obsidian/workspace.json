@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Analysis II.md",
+                "file": "Zwangsbedingungen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Analysis II"
+              "title": "Zwangsbedingungen"
             }
           },
           {
@@ -98,13 +98,11 @@
               "title": "Typst Tools"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "701a8f291b0fac63",
@@ -211,24 +209,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "51337b172116d697",
+  "active": "f1f1bfa1f78ddb63",
   "lastOpenFiles": [
-    "Mannigfaltigkeiten.md",
-    "Extremwertaufgaben mit Nebenbedingungen.md",
-    "Reguläre Abbildung.md",
+    "Funktionenfolgen.md",
     "Implizite Funktionen.md",
     "Extremwertaufgaben.md",
-    "Taylor Entwicklung.md",
-    "Multiindex Notation.md",
+    "Extremwertaufgaben mit Nebenbedingungen.md",
+    "Eigenwerte.md",
     "Differenzierbare Funktionen.md",
     "Anfangswertproblem Existenz von Lösungen.md",
+    "Der Funktionenraum.md",
+    "Analysis II.md",
+    "Mannigfaltigkeiten.md",
+    "Reguläre Abbildung.md",
+    "Taylor Entwicklung.md",
+    "Multiindex Notation.md",
     "~/Obsidianan/anki_cache",
     "~/Obsidianan",
     "~",
     "anki_export.typ",
     "ankify.py",
     "Banachscher Fixpunktsatz.md",
-    "Analysis II.md",
     "ANA 2/collection.media/paste-fcecbc308f5fa6d572f0e7500a5fb75f084393b2.jpg",
     "ANA 2/collection.media/paste-f8952c348ea00417b614cc7999c8bde857c453fc.jpg",
     "ANA 2/collection.media/paste-f79c72d43c3527b566040dfd410f2ba230224d92.jpg",
@@ -255,9 +256,6 @@
     "Tactics.md",
     "Stetigkeit in Metrischen Räumen.md",
     "Stromdichte.md",
-    "Stetigkeit.md",
-    "Skalarprodukt.md",
-    "Sport.md",
-    "Sioyek.md"
+    "Stetigkeit.md"
   ]
 }

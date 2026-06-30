@@ -21,6 +21,7 @@ $$ forall t, t' in [a,b], abs(t-t') < delta => norm(f(t) - f(t')) < epsilon$$
 
 
 > [!Satz] Fortsetzungsatz
+> $$y' (t) = f(t,y(t))$$
 > Sei $f(t,x)$ stetig auf $D subset RR times RR$ D, abgeschlossen, $(t_0, y_0)$ in D.
 > Sei $y(t)$ Lösung der AWA auf $[t_0 - T, t_0 + T]$
 Dann ist y nach links und rehcts auf ein maximales Existenzintervall $$I_max = (t_0 - T_*, t_0 + T_*)$$ 
@@ -28,6 +29,7 @@ bis zum Rand von D stetig diffbar fortsetzbar
 
 
 > [!lemma] Regularitätssatz
+> $$y'(t) = f(t,y(t))$$
 > Sei $f in C^m (D), m >= 1$. Dann gilt $y in C^(m+1)(I)$
 
 ${} D subset RR times RR^n {}$, $f : D -> RR^n$

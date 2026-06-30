@@ -14,8 +14,8 @@
 
 **Es kann sein dass $f$ partiell diffbar aber nicht stetig ist!**
 
-> [!Satz]
-> Für $x in D$ gelte: ${} exists B_R (x) subset D {}$ sodass die partiellen Ableitungen $partial_i f(y),i = 1, dots, n$ beschränkt sind $forall in B_R(x)$, d.h.
+> [!Satz] Stetigkeitsbedingung über partielle Ableitungen
+> Für $x in D$ gelte: $exists B_R (x) subset D$ sodass die partiellen Ableitungen $partial_i f(y),i = 1, dots, n$ beschränkt sind $forall in B_R(x)$, d.h.
 > $$ sup_(y in B_R(x)) abs(partial_i f(y)) <= M, quad forall i$$
 > Dann ist $f$ stetig im Punkt $x$
 
@@ -63,8 +63,8 @@ Schreibweise: $d f(x), d f |_x$
 > $D_f subset RR^n$ und $D_g subset RR^m$ offen, $g : D_g -> RR^n$ $f : D_f -> RR^f$ Abbildungen.
 > Falls g im Punkt $x in D_g$ und $f$ im Punkt $y = g(x) in D_f$ diffbar sind, gilt:
 > ${} h = f compose g {}$ ist diffbar und 
-> $$ D_x h(x) = D_x (f(g(x))) D_x (g(x)) $$
-$$ D_x h(x) in RR^(r times m) quad D_x (f(g(x))) in RR^(r times n) quad D_x g(x) in RR^(n times m)$$
+> $$ D_x h(x) = (D_x f) (g(x)) D_x (g(x)) $$
+$$ D_x h(x) in RR^(r times m) quad (D_x f)(g(x)) in RR^(r times n) quad D_x g(x) in RR^(n times m)$$
 
 > [!Definition] Richtungsableitung
 > $D subset RR^n$ offen, $f : D -> RR$ imp Unkt $x in D$ diffbar.
