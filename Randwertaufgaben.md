@@ -28,3 +28,15 @@ Idee: zurückführen auf AWA
 > $$v'(t) = f'_x (t,y(t))v(t) quad t in I$$
 $$ r'_x (y(a),y(b)) dot v(a) + r'_y (y(a), y(b)) dot v(b) = 0 $$
 > nur die triviale Lösung $v = 0$ besitzt
+i
+
+> [!Satz] Sturm Lioville Probleme
+> Es sei $p(t) >= rho > 0$. Falls 
+> $$ rho/(b-a)^2 + min_(t in I)(r(t) - 1/2q'(t)) > 0$$
+> dann besitzt das Sturm-Lioville Problem (SL-RWA) mit Dirichletschen Randbedingungen (D-RB) eine eindeutige Lösung $y(t) in C^2(I)$.
+> 
+> Falls $$ rho/(b-a)^2 + min_(t in I) (r(t) - 1/2 q'(t)) >= gamma > 0$$
+mit einer Konstante $gamma$, dann gilt für idese Lösung die a-priori-Abschätzung bzugl. der $L^2$ Norm:
+$$ norm(y)_2 + norm(y')_2 + norm(y'')_2 <= c dot (norm(f)_2 + abs(g_a) + abs(g_b)) $$
+mit einer von $y$ und $f$ unabhängigen Konstante $c > 0$.
+
