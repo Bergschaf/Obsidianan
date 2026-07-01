@@ -1,4 +1,5 @@
 {
   "theme": "obsidian",
-  "accentColor": "#f5e85c"
+  "accentColor": "#f5e85c",
+  "textFontFamily": "Iosevka"
 }

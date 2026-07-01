@@ -51,5 +51,6 @@ TODO musterlösungen von zetteln anschauen
 [[Lineare Systeme]]
 
 [[Lösungsmethoden]]
+[[Randwertaufgaben]]
 TODO Mittel- und Zwischenwertsätze aufschreiben
 

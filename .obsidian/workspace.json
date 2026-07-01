@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lösungsmethoden.md",
+                "file": "Randwertaufgaben.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lösungsmethoden"
+              "title": "Randwertaufgaben"
             }
           },
           {
@@ -255,9 +255,21 @@
   },
   "active": "6ca197a82331755e",
   "lastOpenFiles": [
+    "fonts/Iosevka.ttf",
+    "fonts/SGr-Iosevka-Thin.ttc",
+    "fonts/SGr-Iosevka-SemiBold.ttc",
+    "fonts/SGr-Iosevka-Regular.ttc",
+    "fonts/SGr-Iosevka-Medium.ttc",
+    "fonts/SGr-Iosevka-Light.ttc",
+    "fonts/SGr-Iosevka-Heavy.ttc",
+    "fonts/SGr-Iosevka-ExtraLight.ttc",
+    "fonts/SGr-Iosevka-ExtraBold.ttc",
+    "fonts/SGr-Iosevka-Bold.ttc",
+    "fonts/PkgTTC-SGr-Iosevka-34.7.0.zip",
     "Analysis II.md",
-    "Untitled.md",
+    "Randwertaufgaben.md",
     "Lösungsmethoden.md",
+    "Untitled.md",
     "Lineare Systeme.md",
     "Anfangswertproblem Existenz von Lösungen.md",
     "Multiindex Notation.md",
@@ -272,11 +284,6 @@
     "Mannigfaltigkeiten.md",
     "Reguläre Abbildung.md",
     "Taylor Entwicklung.md",
-    "~/Obsidianan/anki_cache",
-    "~/Obsidianan",
-    "~",
-    "anki_export.typ",
-    "ankify.py",
     "Banachscher Fixpunktsatz.md",
     "ANA 2/collection.media/paste-fcecbc308f5fa6d572f0e7500a5fb75f084393b2.jpg",
     "ANA 2/collection.media/paste-f8952c348ea00417b614cc7999c8bde857c453fc.jpg",
@@ -288,18 +295,11 @@
     "ANA 2/collection.media/paste-e6a9cf70b05623ef8a56a962092d6db46c89227e.jpg",
     "ANA 2/collection.media/paste-e5b57aa61c134dd17ae4bf19b24ef03b2d1e0991.jpg",
     "ANA 2/collection.media/paste-e44c9ba64de9be268352282a26ff3d2e05abf509.jpg",
-    "ANA 2/backups/backup-2026-06-23-14.59.20.colpkg",
-    "ANA 2/backups/backup-2026-06-23-14.25.23.colpkg",
-    "ANA 2/backups/backup-2026-06-23-12.28.07.colpkg",
-    "ANA 2/backups/backup-2026-06-23-11.39.56.colpkg",
-    "ANA 2/backups/backup-2026-06-23-11.09.36.colpkg",
     "Wanderung Jakob Matthias (20.6. - 21.6.).md",
     "Vektorräume.md",
     "Transformationsmatrix.md",
     "Typst.md",
     "Untitled 2.md",
-    "Theorethische Physik II.md",
-    "Stetigkeit linearer Abbildungen.md",
-    "Tactics.md"
+    "Theorethische Physik II.md"
   ]
 }
