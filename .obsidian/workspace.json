@@ -35,8 +35,7 @@
               "title": "Fourier Reihe"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,11 +210,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "efda642f333e10d4",
+  "active": "dc3e0b177e553322",
   "lastOpenFiles": [
+    "Fourier Reihe.md",
     "Übersicht.md",
     "Analysis II.md",
-    "Fourier Reihe.md",
     "Differenzierbare Funktionen.md",
     "Skalarprodukt.md",
     "Anfangswertproblem Existenz von Lösungen.md",
