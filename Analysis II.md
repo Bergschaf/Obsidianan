@@ -54,3 +54,6 @@ TODO musterlösungen von zetteln anschauen
 [[Randwertaufgaben]]
 TODO Mittel- und Zwischenwertsätze aufschreiben
 
+
+
+TODO alles noch rein aus [[Übersicht]]

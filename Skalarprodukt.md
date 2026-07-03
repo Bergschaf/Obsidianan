@@ -1,14 +1,16 @@
+> [!definition] Skalarprodukt
 $$(dot, dot) : V times V -> KK  $$
 heißt Skalarprodukt, wenn:
-- **Definit**: $(v, v) >= 0 and (x,x) = 0 <=> x = 0$
-- **Symmetrisch**: $(x,y) = overline((x,y))$
-- **Bilinear**
+> - **Definit**: $(v, v) >= 0 and (x,x) = 0 <=> x = 0$
+> - **Symmetrisch**: $(x,y) = overline((x,y))$
+> - **Bilinear**
 
 
 
 > [!Satz] Cauchy-Schwarz Ungleichung
 > $(a,b) in V$
 > $$abs((a,b))^2 <= (a,a)(b,b)$$
+> TODO Beweis können???
 
 
 ### Norm
