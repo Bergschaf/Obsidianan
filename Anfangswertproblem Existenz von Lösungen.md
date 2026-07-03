@@ -1,9 +1,9 @@
 $$y'(t) = f(t, y(t))$$
-> [!lemma] Existenz von Peano
-> Die Funktion $f(t,x)$ sei stetig auf dem $(n+1)$ dimensionalen Zylinder (???)
+> [!lemma] Existenzsatz von Peano
+> Die Funktion $f(t,x)$ sei stetig auf dem $(n+1)$ dimensionalen Zylinder 
 > $$D = {(t,x) in RR times RR^n | abs(t - t_0) <= alpha, norm(x - y_0) <= beta}$$
 > Dann existiert eine Lösung $y(t)$ auf dem Intervall $I := [t_0 - T, t_0 + T]$ mit 
-> $$ T := min (alpha, beta/M), M := max_(t,x in D) norm((f,t(x)))$$
+> $$ T := min (alpha, beta/M), M := max_((t,x) in D) norm((f,t(x)))$$
 
 > TODO bedingung siehe skript
 
@@ -22,20 +22,28 @@ $$ forall t, t' in [a,b], abs(t-t') < delta => norm(f(t) - f(t')) < epsilon$$
 
 > [!Satz] Fortsetzungsatz
 > $$y' (t) = f(t,y(t))$$
-> Sei $f(t,x)$ stetig auf $D subset RR times RR$ D, abgeschlossen, $(t_0, y_0)$ in D.
+> Sei $f(t,x)$ stetig auf $D subset RR times RR$,
+>  $D$ abgeschlossen, $(t_0, y_0) in D$.
 > Sei $y(t)$ Lösung der AWA auf $[t_0 - T, t_0 + T]$
-Dann ist y nach links und rehcts auf ein maximales Existenzintervall $$I_max = (t_0 - T_*, t_0 + T_*)$$ 
-bis zum Rand von D stetig diffbar fortsetzbar
+Dann ist y nach links und rehcts auf ein maximales Existenzintervall $$I_max = (t_0 - T_*, t_0 + T^*)$$ 
+**bis zum Rand von $D$** stetig diffbar fortsetzbar
+> (Es kann passieren dass das Zeitintervall für $t$ unendlich ist, $norm(y(t))$ aber gegen unendlich geht für $t -> t_0 + T^*$, d.h. der Rand von $D$ nicht mit $t$ sondern mit $y(t)$ erreicht wird.)
+
+> [!Korollar] Globale Existenz
+> Sei $f(t,x)$ stetig auf $RR times RR^n$. Seien alle lokalen Lösungen $y(t)$ (definiert durch Satz von Peano) beschränkt durch eine stetige Funktion $rho : RR -> RR$:
+> $$norm(y(t)) <= rho(t), quad t in [t_0 - T , t_0 + T]$$
+> Dann ist $y$ auf ganz $RR$ fortsetzbar.
+
 
 
 > [!lemma] Regularitätssatz
-> $$y'(t) = f(t,y(t))$$
-> Sei $f in C^m (D), m >= 1$. Dann gilt $y in C^(m+1)(I)$
+> Sei $y$ eine Lösung von $y'(t) = f(t,y(t))$ auf $I$ und $f in C^m (D), m >= 1$.
+> Dann gilt $y in C^(m+1)(I)$
 
-${} D subset RR times RR^n {}$, $f : D -> RR^n$
 > [!definition] Lokale Lipschitz stetigkeit
-> $f$ ist lokal lipschitz stetig bzgl $x$, falls für alle Punkte $t,x in D$ eine Umgebung $U$ existiert, s.h. $f in D inter U$ Lipschitz stetig bezüglich $x$ ist.
-> TODO genaue Formel hier
+$D subset RR times RR^n {}$, $f : D -> RR^n$
+>-  $f$ ist lokal lipschitz stetig bzgl $x$, falls für alle Punkte $t,x in D$ eine Umgebung $U$ existiert, s.h. $f in D inter U$ Lipschitz stetig bezüglich $x$ ist.
+
 TODO Bedingung mit stetig diffbar impliziert lokal lipschitz stetig
 ## Stabilitäts- und Eindeutigketissatz
 Sei $f(t,x)$ stetig auf $D subset RR times RR^n$ und ==lokal Lipschitz stetig== bzgl $x$.

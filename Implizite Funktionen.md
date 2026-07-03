@@ -1,5 +1,5 @@
 
-> [!Satz] 
+> [!Satz] Satz der Impliziten Funktionen
 > Sei $X subset RR^n$ offen, $Y subset RR^m$ offen, $F in C^1(X times Y, RR^m)$ 
 > **stetig diffbar** und $(hat(x), hat(y)) in X times Y$ mit $F(hat(x), hat(y)) = 0$.
 > Die $m times m$ matrix $D_y F(x,y)$ sei im Punkt $(hat(x), hat(y))$ invertierbar.
