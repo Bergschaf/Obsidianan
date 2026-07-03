@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anfangswertproblem Existenz von Lösungen.md",
+                "file": "Lösungsmethoden.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Anfangswertproblem Existenz von Lösungen"
+              "title": "Lösungsmethoden"
             }
           },
           {
@@ -212,21 +212,21 @@
   },
   "active": "78d74fa7ed01bcc0",
   "lastOpenFiles": [
+    "Extremwertaufgaben mit Nebenbedingungen.md",
+    "Randwertaufgaben.md",
+    "Lineare Systeme.md",
+    "Anfangswertproblem Existenz von Lösungen.md",
+    "Differenzierbare Funktionen.md",
     "Explizite Differentialgleichungen.md",
     "Analysis II.md",
     "Banachscher Fixpunktsatz.md",
-    "Differenzierbare Funktionen.md",
     "Mannigfaltigkeiten.md",
     "Metrischer Raum.md",
-    "Extremwertaufgaben mit Nebenbedingungen.md",
     "Implizite Funktionen.md",
     "Untitled 1.md",
     "Topologische Räume.md",
     "Lösungsmethoden.md",
-    "Randwertaufgaben.md",
-    "Anfangswertproblem Existenz von Lösungen.md",
     "Stetige Funktionen auf Kompakten Mengen.md",
-    "Lineare Systeme.md",
     "Zwangsbedingungen.md",
     "fonts/Iosevka.ttf",
     "fonts/SGr-Iosevka-Thin.ttc",

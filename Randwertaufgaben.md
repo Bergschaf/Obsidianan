@@ -28,7 +28,7 @@ Idee: zurückführen auf AWA
 > $$v'(t) = f'_x (t,y(t))v(t) quad t in I$$
 $$ r'_x (y(a),y(b)) dot v(a) + r'_y (y(a), y(b)) dot v(b) = 0 $$
 > nur die triviale Lösung $v = 0$ besitzt
-i
+
 
 > [!Satz] Sturm Lioville Probleme
 > Es sei $p(t) >= rho > 0$. Falls 
