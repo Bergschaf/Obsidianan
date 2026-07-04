@@ -54,7 +54,7 @@
 #let coKer = "coKer"
 #let Bil = "Bil"
 
-= Dualräume
+=== Dualräume
 
 $V^* := Hom(V, K) $ 
 #emph[Duale Paarung] $chevron.l v^*, v chevron.r := v^*(v) $ (ist bilinear)
@@ -68,14 +68,14 @@ $ T_B : V^* → K^n, v^* ↦ (v^*(v_i))_(i=1)^n $
 $dim(V^*) > dim(V)$ gelten)
 
 
-= Basiswechsel
+=== Basiswechsel
 
 Seien $B = (v_i)_{i∈I}$ und $tilde(B) = (tilde(v_i))_{i∈I}$ Basen von $V$.
 Dann gilt $T_(B^* ← tilde(B)^*) = T_(B ← tilde(B))^(-T)$
 
 (LA1: $(T_(B <- tilde(B)))^T = T_(tilde(B) <- B)$)
 
-= Annihilator
+=== Annihilator
 
 #let Set = "Set"
 $ (M : Set V)^0 := {v^* ∈ V^* | (v^*, v) = 0 quad forall v ∈ M} 
@@ -91,7 +91,7 @@ Wenn $(v_1, …, v_k)$ Basis von $U ⊆ V$, dann ist
 $(v_(k+1)^*, …, v_n^*)$ eine Basis von $U^0$.
 (Prä-Annihilator analog)
 
-= Duale Homomorphismen
+=== Duale Homomorphismen
 $f : V → W quad f^* : W^* → V^*, w^* ↦ w^* ∘ f $
 
 $ (f ∘ g)^* = g^* ∘ f^*$ 
@@ -103,7 +103,7 @@ $f injektiv ⇒ f^* surjektiv $ (und andersrum)
 
 $ (M_(B_W ← B_V)(f))^T = M_(B_V^* ← B_W^*)(f^*)$
 
-= Fundamentale Unterräume
+=== Fundamentale Unterräume
 
 $Bild(f^*) = ker(f)^0 quad ker(f^*) = Bild(f)^0 quad Bild(f) = prea(ker(f^*)) quad ker(f) = prea(Bild(f^*))$
 
@@ -116,7 +116,7 @@ TODO: Iso hinschreiben
 
 TODO: bisschen Faktor-Sachen
 
-= Bidualraum
+== Bidualraum
 
 Kanonische Injektion $i_V : V → V^{**}, v ↦ ⟨·, v⟩ $
 
@@ -127,15 +127,14 @@ $F^0 = i_V (prea(F)) $
 
 $((U)^0)^0 = i_V (U) $
 
-= Bidualer Homomorphismus
-
-$f : V → W quad f^(**) : V^(**) → W^(**), v^(**) ↦ v^(**) ∘ f^* $
+#definition("Bidualer Homomorphismus")[
+$f : V → W quad f^(**) : V^(**) → W^(**), v^(**) ↦ v^(**) ∘ f^* $]
 TODO Diagramm ist kommutativ.
 
 
 // Was ??? $ M_(B_{V^{**}} ← B_{W^{**}})(f^{**}) = (M_(B_V ← B_W)(f))^T $
 
-= Bilineare Abbildungen
+=== Bilineare Abbildungen
 
 sind ein UVR von $W^(U × V)$ (= $U × V → W$),
 eindeutig durch Bilder auf dem Produkt der Basen festgelegt.
@@ -163,7 +162,7 @@ $t = sum_i α_i u_i ⊗ v_i $
 $ u ⊗ v = 0 ⇔ u = 0 or v = 0$
 
 
-= Tensorprodukt linearer Abbildungen
+== Tensorprodukt linearer Abbildungen
 
 $f_1 : U_1 → V_1 quad f_2 : U_2 → V_2 $
 
@@ -187,22 +186,19 @@ $(A lt B)^(-1) = A^(-1) lt B^(-1) $
 #let Rang = "Rang"
 *$Rang(A lt B) = Rang(A) Rang(B) $*
 
-= Darstellung von Tensoren
+== Darstellung von Tensoren
 #let tensor = $times.o$
 (alle VR endlichdimensional)
 $B_U = (u_i) B_V = (v_j) $
 
 $ Phi_(B_U tensor B_V) : K^(n × m) ≅ U ⊗ V,
 A ↦ sum_(i=1)^n sum_(j=1)^m a_(i j) (u_i ⊗ v_j) $
-#lin
 $ U^* ⊗ V^* ≅ (U ⊗ V)^* $
-#lin
 Rang eines Tensors ist Rang der Komponentematrix.
 $t ∈ U ⊗ V $
 $Rang(t) = Rang(Phi_(B_U, B_V)^-1(t)) $
 
 $⇒ Rang(t) ≤ min{dim(U), dim(V)} $
-#lin
 /*
 * TODO das kann doch nd wichtig sein
 Komponentenmatrix bei Basiswechsel
@@ -212,12 +208,12 @@ Sei $A$ Komponentenmatrix von $t ∈ U ⊗ V$.
 $ tilde(A) = T_(B_U ← tilde(B_U)) A T_(B_V ← tilde(B_V)) $
 */
 
-= Tensoren als lineare Abbildungen
+== Tensoren als lineare Abbildungen
 
 $ I : U ⊗ V =^~ Hom(V^*, U) := u ⊗ v ↦ ⟨·, v⟩ u $
 $ Phi^(-1)_(B_(U tensor V))(t) = M_(U <- V*)(I(t) $
 
-= Multilineare Dinge
+=== Multilineare Dinge
 
 #let Mult = "Mult"
 $Mult(U_1, …, U_n, W) $ ist Vektorraum.
@@ -232,10 +228,10 @@ Elementartensoren haben Rang 1.
 #lin
 
 $ A ∈ K^(n_1 × … × n_N) quad Rang(A)$ : minimale Anzahl an Summanden, sodass
-$ A = sum_(i=1)^n x_1^(i) lt dots lt x_N^(i) $
+$A = sum_(i=1)^n x_1^(i) lt dots lt x_N^(i) $
 
 mit $x^(i)_k in K^(k)$
-und $ x_1 lt x_2 = vec(x_11, dots.v, x_(1 n))mat(x_21, dots, x_(2 n)) $
+und $x_1 lt x_2 = vec(x_11, dots.v, x_(1 n))mat(x_21, dots, x_(2 n)) $
 TODO geht das eleganter ^
 
 $ Phi_B_(V_1 tensor dots tensor V_n) : K^(n_1 times dots n_N) -> times.o.big_(k=1)^N V_k := A mapsto sum_(i_1 = 1)^(dim(V_1)) dots sum_(i_N = 1)^(dim(V_n)) a_(i_1 dots i_N) (v_1^(i_1) tensor dots tensor v_n^(i_N))$
@@ -246,7 +242,7 @@ $Rang(t) = Rang(A) $
 Sind auch lineare Abbildungen.
 TODO genauer???
 
-= Tensoren über einem VR
+== Tensoren über einem VR
 #let calt = $cal(T)$
 $ calt^(r,s)(V) := V tensor "r-mal" tensor V ⊗ (V^*) tensor "s-mal" tensor V^* $
 Bissl unnötiges Zeug
@@ -284,7 +280,7 @@ TODO Dimensionsformel dafür
 *Schiefsymmetrisierung*:
 $t ↦ 1/r! sum_(sigma∈S_r) sgn(sigma) P_sigma(t) $
 
-= Determinanten
+== Determinanten
 
 (nicht triviale alternierende multilineare Form
 $ Δ ∈ Mult(V^n, K)$)
@@ -337,7 +333,6 @@ $x ∈ K^n$, Lsg: $A x = b$.
 $x_i = 1/ det(A) * det(a_1, …, a_(i-1), b, a_(i+1), …, a_n)$
 ]
 
-= Orientierung eines Vektorraums
 
 #definition("Orientierungstreu")[
 #let Aut = $op("Aut")$
@@ -448,16 +443,18 @@ bzw. ${A x | x ∈ U} ⊆ U$.]
 
 $f$-invariante Unterräume mit $U_1 ⊕ ⋯ ⊕ U_l = V$
 ⇒ $∃ B_U$ (Basis von $U$) sodass
-
+/*
 $ M_(B_V ← B_V)(f) =
 mat(A_11, 0, …, 0;
  0, A_22, …, 0;
  ⋮, ⋮, ⋱, ⋮;
  0, 0, …, A_(n n)) $
+*/
+#let diag = "diag"
+$M_(B_V <-B_V)(f) = diag(A_11, dots, A_(n n))$ (Blockdiagonalgestalt)
 
-Blockdiagonalgestalt.
 
-= Eigenwerte / Vektoren
+=== Eigenwerte / Vektoren
 
 $f(v) = λ v quad (v ≠ 0) $
 #let Eig = $op("Eig")$ 
@@ -512,7 +509,7 @@ $ ⇒ Spur(A) = Spur(A^T)$
 TODO Spektralzerlegung
 
 #lemma([Diagonalsierbar $<=>$])[
-- $ sum_(i=1)^s p_geo(A, λ_i) = n $
+- $ sum_(i=1)^s mu_geo(A, λ_i) = n $
 
 - $x_A$ zerfällt in Linearfaktoren und
 - $mu_geo(A, λ_i) = mu_alg(A, λ_i) $ für alle $i$.
@@ -640,3 +637,34 @@ $mu_geo (lambda)$ anzahl der Jordanblöcke mit Diagonaleintrag $lambda$
 *Vielfachheit von $lambda$* in $mu_A$ ist die Größe des größten Jordan Blocks mit Diagonaleintrag $lambda$
 
 TODO Begleitmatrix
+
+#definition("Bilinearform")[
+  $gamma : V times V -> K in Bil(V,V)$ mit
+  $gamma(dot, v)$ und $gamma(v, dot)$ linear
+]
+- *symmetrisch*: $gamma(u,v) = gamma(v,u)$
+- *schiefsymmetrisch*: $gamma(u,v) = - gamma(v,u)$
+- *alternierend*: $u = v => gamma(u,v) = 0$
+jede alternierende Bilinearform ist symmetrisch
+
+#definition("Strukturmatrix")[
+  $ M_(B_V* <- B_V) (gamma) = [gamma(v_i,v_j)]_(i,j = 1)^n in K^(n times n) $
+]
+symm und schiefsymm $<=>$ wenn Strukturmatrix symm bzw schiefsymm
+
+$gamma^((1))(u) : V* := gamma(u, dot)$ (2) analog
+
+$gamma(u,v) = x^T A y$
+
+#definition("Duale Bilinearform")[
+  $gamma*(u,v) = gamma(v,u)$ (für $dim(V) < infinity$)
+]
+
+#let calm = $cal(M)$
+$M_(B_V* <- B_V) : Hom(V, V*) =^~ K^(n times n)$ $Hom(V, V*) =^~ Bil(V,V)$
+
+
+$calm_(hat(B)_(V^*) <- hat(B)_V)(gamma) = calt_(hat(B)_(V^*) <- B_(V^*)) calm_(B_V^* <- B^V)(gamma) calt_(B_V <- hat(B)_V)$
+
+
+
