@@ -130,7 +130,6 @@ $((U)^0)^0 = i_V (U) $
 = Bidualer Homomorphismus
 
 $f : V → W quad f^(**) : V^(**) → W^(**), v^(**) ↦ v^(**) ∘ f^* $
-
 TODO Diagramm ist kommutativ.
 
 
