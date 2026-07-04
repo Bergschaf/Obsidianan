@@ -251,7 +251,6 @@ TODO genauer???
 $ calt^(r,s)(V) := V tensor "r-mal" tensor V ⊗ (V^*) tensor "s-mal" tensor V^* $
 Bissl unnötiges Zeug
 
-$V^⊗r := T^(r,0)(V) = ⨂_(u=1)^r V $
 
 #definition("Permutation")[
 $ P_sigma : V^(⊗r) → V^(⊗r) :=
@@ -363,17 +362,14 @@ $R$ Integritätsring ⇒ $R[t]$ ist Integritätsring.
 
 (:= kommutativ, nullteilerfrei mit Einselement und nicht der Nullring)
 
-= Modul über kommutativem Ring
-
-$ + : M × M → M $
-
+#definition("Modul über komm. Ring")[
+$ + : M × M → M$
 $(M, +)$ abelsche Gruppe.
 
-$ · : R × M → M $
-
+$ · : R × M → M$
 assoziativ mit Ringmultiplikation.
 
-gemischte Distributivität.
+gemischte Distributivität.]
 
 unitärer Modul: $1 · u = u$ für $1 ∈ R, u ∈ M$.
 
@@ -384,18 +380,17 @@ unitärer $R$-Modul heißt frei, wenn es eine Basis von $M$ gibt
 
 endlich frei, wenn die Basis dazu noch endlich ist.
 
-Sei $R$ komm. Ring mit Eins und $(M_i)_i$ endlich frei unitär,
+Sei $R$ komm. Ring mit Eins und $M$ endlich frei unitär,
 dann ist $M$ iso zu $R^n$ mit $n = |B_M|$.
 
-$ Rang(M) = n $
+$ Rang(M) = n$
 
-= Algebra
-
+#definition("Algebra")[
 $(A, +, ·)$ ist $R$-Modul.
 
 $(A, +, *)$ ist Ring.
 
-$*$ assoziativ mit $·$.
+$*$ assoziativ mit $·$]
 
 kommutativ, wenn $*$ komm.
 
@@ -406,49 +401,50 @@ mit Eins, wenn es ein bzgl. $*$ neutrales Element gibt.
 $*$ ist bilinear.
 
 $U$ ist Unteralgebra ⇔ $a-b ∈ U,; α · a ∈ U,; a * b ∈ U$.
+#lin
 
-= Polynomfunktion
+$R$ komm Ring, $(A, +, dot, *)$ unitäre Algebra mit eins über $R$
+#definition("Einsetzungshomomorphismus")[
+  $ e v_a : R[ŧ] -> R := p mapsto p(a) $
+]
+$f : A_1 ->^~ A_2 quad f compose e v_a = e v_(f(a)) $
+TODO diagramm
 
+#definition("Polynomfunktion")[
 $ Phi : (R[t], +, ·) → (A^A, +, ·, *) := p ↦ p(·) $
-
+]
 Homomorphismus von Algebren mit Eins.
 
 Unendlich ⇒ $Phi$ injektiv (sonst ggf. nicht).
 
-= Polynomdivision
+=== Polynomdivision
+$p_2 | p_1 := ∃ q ∈ R[t],; p_1 = q p_2 $
 
-$ p_2 | p_1 := ∃ q ∈ R[t],; p_1 = q p_2 $
-
-$ ∀ p_1, p_2 ∃ q, r ∈ K[t] : p_1 = q p_2 + r deg(r) < deg(p_2) $
+$∀ p_1, p_2 ∃ q, r ∈ K[t] : p_1 = q p_2 + r deg(r) < deg(p_2) $
 
 TODO Polynomdivision
 
-$ K[t] $ ist ein Hauptidealring.
+$K[t] $ ist ein Hauptidealring.
 
-$ p(λ) = 0 ⇔ (t-λ) | p $
+$p(λ) = 0 ⇔ (t-λ) | p $
 
-$ p = (t-λ_1)^{n_1} ⋯ (t-λ_s)^{n_s} · q $
+$p = (t-λ_1)^(n_1) ⋯ (t-λ_s)^(n_s) · q $ ($q$ keine Nullstellen)
 
-(keine Nullstellen)
-
-
-= Normalformen von Endos
+== Normalformen von Endos
 
 #let Endo = $op("Endo")$
-$ M_(B_V ← B_V)(id_(Endo(U))) ≅ (K^(n × n), +, ·, o) $
+$ M_(B_V ← B_V)(Endo(V), +, dot, compose) ≅ (K^(n × n), +, ·, o) $
 
 Isomorphismus von Algebren mit Eins.
 
-= Ähnlichkeit
+#definition("Ähnlich")[
+$A, tilde(A) ∈ K^(n × n) $ heißen ähnlich, wenn es eine invertierbare Matrix $T ∈ K^(n × n)$ gibt, sodass
+$tilde(A) = T^-1 A T $]
+⇒ Darstellungsmatrix vom gleichen Endo nur mit anderer Basis.
 
-$ A, tilde(A) ∈ K^(n × n) $ heißen ähnlich, wenn es eine invertierbare Matrix $T ∈ K^(n × n)$ gibt, sodass
-
-$ tilde(A) = T^-1 A T $
-
-⇒ Darstellungsmasse vom gleichen Endo nur mit anderer Basis.
-
+#definition("Invariant")[
 $U ⊆ V$ heißt invariant, wenn $f(U) ⊆ U$,
-bzw. ${A x | x ∈ U} ⊆ U$.
+bzw. ${A x | x ∈ U} ⊆ U$.]
 
 $f$-invariante Unterräume mit $U_1 ⊕ ⋯ ⊕ U_l = V$
 ⇒ $∃ B_U$ (Basis von $U$) sodass
@@ -463,87 +459,71 @@ Blockdiagonalgestalt.
 
 = Eigenwerte / Vektoren
 
-$ f(v) = λ v (v ≠ 0) $
+$f(v) = λ v quad (v ≠ 0) $
 #let Eig = $op("Eig")$ 
-$ Eig(A, λ) = {x ∈ K^n | A x = λ x} = ker(λ I - A) $
+
+$Eig(A, λ) = {x ∈ K^n | A x = λ x} = ker(λ I - A) $
 #let geo = "geo"
 #let alg = "alg"
-$ p_geo = dim(Eig(A, λ)) $
 
-(geometrische Vielfachheit)
+#definition("Geometrische Vielfachheit")[
 
+$mu_geo = dim(Eig(A, λ)) $
+]
 $f$ ist injektiv ⇔ $0$ ist kein EW von $f$.
 (wenn $dim(V) < ∞$, dann sogar $f$ bijektiv ⇔)
 
 $A$ ist regulär ⇔ $0$ ist kein EW von $A$.
 
-$ ker(λ I - A) = "Lösung von" (λ I - A)x = 0 $
+$ker(λ I - A) = "Lösung von" (λ I - A)x = 0 $
 
-= Spektrum
+#definition("Spektrum")[
+$ Lambda(f) := {λ | λ "ist EW von" f} 
+ = {λ | id λ - f "ist nicht invertierbar"}$
+$ ⇒ det(I λ - A_f) = 0 $]
 
-$ Δ(f) := {λ | λ "ist EW von" f} $
 
-$ = {λ | id λ - f "ist nicht invertierbar"} $
-
-$ ⇒ det(I λ - A_f) = 0 $
-
-= charakteristisches Polynom
-
-$ x_A = det(I t - A) $
-
-("charakteristische Matrix")
-
-Sei $x_A = sum_(k=0)^n a_k t^k$.
-
-$ a_n = 1 $
+#definition("Characteristisches Polynom")[
+$ x_A = det(bb(1) t - A)$]
+$x_A = sum_(k=0)^n a_k t^k => a_n = 1 $
 
 #let Spur = $op("Spur")$
-#let ii = $i i$
-$ Spur(A) = sum_(i=1)^n a_ii $
+$a_(n-1) = -Spur(A) $
+$a_0 = (-1)^n det(A) $
 
-$ a_(n-1) = -Spur(A) $
-
-$ a_0 = (-1)^n det(A) $
-
-$ mu_alg(A, λ_i) = n_i $
-
+$mu_alg(A, λ_i) = n_i $
 (Exponent des Linearfaktors $(t-λ_i)$ in der eindeutigen Zerlegung des Polynoms)
+
+#let ii = $i i$
+#definition("Spur")[$Spur(A) = sum_(i=1)^n a_ii $]
 
 $ 1 ≤ mu_geo(A, λ) ≤ mu_alg(A, λ) ≤ n $
 
-$ x_A = x_Ä $
-
+$ x_A = x_(hat(A))$
 (ähnliche Matrizen besitzen das selbe charakteristische Polynom)
-
-$ ⇒ Spur(A) = Spur(A^T) $
-
+$ ⇒ Spur(A) = Spur(A^T)$
 (ähnliche Matrizen haben die selbe Spur)
 
-= Diagonalisierbare Endomorphismen
-
-A heißt diagonalisierbar, wenn ähnlich an Diagonalmatrix.
-
+#definition("Diagonalisierbar")[Ähnlich zu Diagonalmatrix]
 ⇒ Eigenwerte auf der Diagonalen.
 
 ⇒ Eigenbasis, wenn alle Basisvektoren EVs sind.
 
 TODO Spektralzerlegung
 
-A ist diagonalisierbar ⇔
-
+#lemma([Diagonalsierbar $<=>$])[
 - $ sum_(i=1)^s p_geo(A, λ_i) = n $
 
 - $x_A$ zerfällt in Linearfaktoren und
 - $mu_geo(A, λ_i) = mu_alg(A, λ_i) $ für alle $i$.
 - $mu_A$ zerfällt vollständig in Linearfaktoren und besitzt nur einfache Nullstellen
+]
 
-($n$ paarweise verschiedene EW $=>$ diagonalisierbar)
+$n$ paarweise verschiedene EW $=>$ diagonalisierbar
 
-= Projektoren
 
-$ P^2 = P $
-
-$ V = Bild(P) ⊕ ker(P) $
+#definition("Projektor")[$ P^2 = P$]
+$V = Bild(P) ⊕ ker(P) $
 
 Sei $V = U ⊕ W$ (Zerlegung in Komplementäre),
 dann $P : V → V$ mit $Bild(P)=U$ und $ker(P)=W$.
@@ -561,6 +541,7 @@ $=> exists p in K_(n-1) [t], A^(-1) = p(A)$
 
 #lemma[Die annulierenden Polynome bilden ein Ideal $J_A$]
 #definition("Minimalpolynom")[
+  Das normierte Polynom kleinsten grades mit $mu_A in J_A \\ {0}$ 
   Das normierte Polynom kleinsten grades mit $mu_A in J_A \\ {0}$ 
 ]
 Ähnliche matritzen haben die selben Minimalpolynome
