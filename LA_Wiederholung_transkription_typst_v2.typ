@@ -666,5 +666,66 @@ $M_(B_V* <- B_V) : Hom(V, V*) =^~ K^(n times n)$ $Hom(V, V*) =^~ Bil(V,V)$
 
 $calm_(hat(B)_(V^*) <- hat(B)_V)(gamma) = calt_(hat(B)_(V^*) <- B_(V^*)) calm_(B_V^* <- B^V)(gamma) calt_(B_V <- hat(B)_V)$
 
+== Equivalenzklassen von Strukturmatritzen
+- *Äquivalenz* (für $Hom(V,W)$): $S^(-1) A T$ erhält Rang, Rang NF
+- *Ähnlichkeit* (für $Endo(V)$): $T^(-1) A T$ erhält Rang, $chi_A$, $mu_A$, $Lambda$, FNF, JNF
+- *Kongruenz* (für $Bil(V,V)$): $T^T A T$ erhält Rang, Symmetrie
+
+#definition("Rang einer Bilinearform")[
+  $Rang(gamma) = Rang(gamma^((2)))$
+]
+#lemma[
+  $dim(V) < infinity => Rang(gamma) = Rang(A)$  (beliebige Strukturmatrix)
+  $=> Rang(gamma) = Rang(gamma*)$
+]
+#lemma("Nicht ausgeartete Bilinearform")[
+  - $gamma^((1))$ inj 
+  - $gamma^((2))$ inj
+  - $A$ regulär ($Rang(A) = n$)
+  - $V^perp = {0}$ (für $gamma in Bil_"sym" (V,V)$)
+]
+#definition("Orthogonal")[
+  $u perp v <=> gamma(u,v) = 0$
+
+  $E^perp = {u in V | gamma(u,v) = 0, forall v in E}$
+]
+
+#lemma[
+  $B_V$ ist $gamma$ *Orthongonalbasis* $<=>$ $M_(B_(V^*) <- B_V)(gamma)$ diagonal 
+]
+#lemma[
+  $gamma in Bil_"sym", B_V = (u_j) gamma-$Orthogonalbasis von $U$.
+
+$gamma$ ist nicht ausgeartet auf $U$ $<=>$ $gamma(u_j,u_j) eq.not 0$
+]
+
+#definition("Hom von VR mit sym Bilinearform")[
+  $f : (V,gamma_1) ->^~ (W,gamma_2), gamma_2(f(u),f(v)) = gamma_1(u,v) $
+]
+
+#definition("Quadratische Form")[
+  $q : V -> K$
+
+  $q(alpha u) = alpha^2 q(u)$
+
+  $Gamma := (u,v) mapsto q(u+v) - q(u) - q(v)$ ist Bilinear
+]
+$q_gamma(u) = gamma(u,u)$
+
+#lemma[
+  $"char"(K) eq.not 2$
+
+  $Q F(V) =^~ Bil_"sym"(V,V) := 1/2 (q(u+v) - g(u) -  q(v)) $
+]
+
+
+
+
+
+
+
+
+
+
 
 
