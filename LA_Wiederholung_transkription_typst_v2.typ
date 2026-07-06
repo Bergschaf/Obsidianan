@@ -718,12 +718,28 @@ $q_gamma(u) = gamma(u,u)$
   $Q F(V) =^~ Bil_"sym"(V,V) := 1/2 (q(u+v) - g(u) -  q(v)) $
 ]
 
+$ dim(Q F(V)) = 1/2n (n+1)$
+- Symmetrische Bilinearform ist durch Werte auf der Diagonalen der Darstellungsmatrix festgelegt
+- jede symm. Matrix ist kongruent zu einer Diagonalmatrix
+
+#lemma[
+  $gamma$ auf $U$ nicht ausgeartet $=> U perp.o U^perp = V$j
+]
+
+#let proj = "proj"
+#theorem[
+  $(u_i)$ Orthogonalbasis von U, 
+
+  $ U perp.o U^perp = V => proj_U^gamma (v) = sum_i gamma(v, u_i)/gamma(u_i, u_i) u_i $
+]
+
+== Relle Vektorräume
 
 
 
 
 
-
+TODO bei JNF gl. 38.19
 
 
 
