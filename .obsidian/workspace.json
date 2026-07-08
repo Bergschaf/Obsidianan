@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lineare Systeme.md",
+                "file": "Analysis II.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lineare Systeme"
+              "title": "Analysis II"
             }
           },
           {
@@ -212,8 +212,8 @@
   },
   "active": "dc3e0b177e553322",
   "lastOpenFiles": [
-    "Anfangswertproblem Existenz von Lösungen.md",
     "Lineare Systeme.md",
+    "Anfangswertproblem Existenz von Lösungen.md",
     "Implizite Funktionen.md",
     "Analysis II.md",
     "Übersicht.md",

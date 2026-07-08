@@ -32,16 +32,18 @@ eine lineare AWA
 > $$y'(t) = A(t) y(t) + b(t)$$
 > Seien $A : [t_0, infinity) -> RR^(n times n), b : [t_0, infinity) -> RR^n$ **stetig**. Dann gilt:
 > - Für einen konstanten Vektor $c in RR^n$ ist 
->  $$y_b (t) := Phi(t) (integral^t_(t_0) Phi^(-1)(s)b(s)d s + c) $$
+>  $$y_p (t) := Phi(t) (integral^t_(t_0) Phi^(-1)(s)b(s)d s + c) $$
 > eine partiukäre Lösung des inhomogenen linearen Systems.
 > - Alle Lösungen der inhomogenen Gleichung haben die Form:
->    $$y(t) = y_b (t) + nu(t) $$
+>    $$y(t) = y_p (t) + nu(t) $$
 >    wobei $nu in H$ (Lösungsraum des homogenen systems).
->- Gilt $c = y_0$, dann gilt $y_b(t_0) = y_0$
+>- Gilt $c = y_0$, dann gilt $y_p(t_0) = y_0$
+
+Das ist anscheinend Variation der Konstanten? Aber warrrummmmmm??
 
 ## Lösen??
 
-
+p
 ### Lineare Systeme mit konstanten Koeffizienten
 Bestimmen der Fundamentalmatrix von $y' = A y$ (bezieht sich immer auf den homogenen Teil)
 - $A$ diagonalisierbar (komplexe EWs erlaubt) -> wir finden $n$ Eigenwerte $lambda_i$ ($mu_"geo" (lambda_i, t) =  mu_"alg" (lambda_i, t)$)

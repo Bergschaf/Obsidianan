@@ -57,3 +57,6 @@ TODO Mittel- und Zwischenwertsätze aufschreiben
 
 
 TODO alles noch rein aus [[Übersicht]]
+
+
+TODO  Liste aus gegenbeispielen
