@@ -14,7 +14,7 @@ $$ integral_a^b overline(f(x)) d x = overline(integral_a^b f(x) d x)$$
 
 Für $xi in (a,b)$ setzt man $$f(xi) := (f(xi-) + f(xi+))/2$$
 Diese Funktionen bilden einen Vektorraum $$cal(R)[a,b]$$
->[!Definition] Sesquilinearform
+>[!Definition] Sesquilinearform (-> $L^2$-Skalarprodukt)
 > $f, g in cal(R)[a,b]$
 > $$ (f,g) := integral_a^b f(x)overline(g(x))d x$$
 linear im ersten argument und konjugiert linear im anderen:
@@ -26,9 +26,8 @@ linear im ersten argument und konjugiert linear im anderen:
 $(dot, dot)$ besitzt die Eigenschaften eines [[Skalarprodukt]]s
 
 
-## L²-Norm auf R[a,b]
-
-$$ norm(f)_2 := sqrt((f,f)) = (integral_a^b f(x) overline(f(x))d x)^(1/2)$$
+> [!definition] L²-Norm auf R[a,b]
+> $$ norm(f)_2 := sqrt((f,f)) = (integral_a^b f(x) overline(f(x))d x)^(1/2)$$
 
 (erfüllt die Normeigenschaften ([[Normierter Raum]]))
 
@@ -37,8 +36,7 @@ $$ norm(f)_2 := sqrt((f,f)) = (integral_a^b f(x) overline(f(x))d x)^(1/2)$$
 Eine[[Funktionenfolgen]] $f_n$ konvergiert gegen $f$ im quadratischen Mittel, wenn gilt
 $$norm(f_n - f)_2 -> 0 quad "für" n -> infinity$$
 
-
-> **Gleichmäßige Konvergenz impliziert L² Konvergenz**
+> [!lemma] **Gleichmäßige Konvergenz impliziert L² Konvergenz**
 > $$norm(f_n - f)^2_infinity -> 0 => norm(f_n - f)_2^2 -> 0$$
 
 
@@ -46,3 +44,6 @@ $$norm(f_n - f)_2 -> 0 quad "für" n -> infinity$$
 Eine Funktion $f : RR -> KK$ heißt **L-periodisch**, falls
 $$ f(x + L) = f(x) quad forall x in RR$$
 
+
+> [!lemma] Auf $2pi$ periodizität reduzieren
+> Sei $f(x + L) = f(x) quad forall x$, dann ist $tilde(f)(x) = f(L/2pi x)$ $2pi$-Periodisch

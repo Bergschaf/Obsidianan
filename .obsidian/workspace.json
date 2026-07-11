@@ -22,20 +22,63 @@
             }
           },
           {
+            "id": "977a9cb8d0510891",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Metrischer Raum.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Metrischer Raum"
+            }
+          },
+          {
+            "id": "8fa0604dff2258ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Übersicht.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Übersicht"
+            }
+          },
+          {
+            "id": "7f17c887b2be8cc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Skalarprodukt.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Skalarprodukt"
+            }
+          },
+          {
             "id": "efda642f333e10d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fourier Reihe.md",
+                "file": "Der Funktionenraum.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fourier Reihe"
+              "title": "Der Funktionenraum"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,23 +253,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dc3e0b177e553322",
+  "active": "977a9cb8d0510891",
   "lastOpenFiles": [
-    "Lineare Systeme.md",
-    "Anfangswertproblem Existenz von Lösungen.md",
-    "Implizite Funktionen.md",
-    "Analysis II.md",
-    "Übersicht.md",
     "Fourier Reihe.md",
-    "Differenzierbare Funktionen.md",
+    "Der Funktionenraum.md",
     "Skalarprodukt.md",
+    "Übersicht.md",
+    "Orthogonalsystem.md",
+    "Analysis II.md",
+    "Normierter Raum.md",
+    "Metrischer Raum.md",
+    "Banachscher Fixpunktsatz.md",
+    "Implizite Funktionen.md",
+    "Differenzierbare Funktionen.md",
+    "Anfangswertproblem Existenz von Lösungen.md",
+    "Taylor Entwicklung.md",
+    "Lineare Systeme.md",
+    "Randwertaufgaben.md",
     "Lösungsmethoden.md",
     "Extremwertaufgaben mit Nebenbedingungen.md",
-    "Randwertaufgaben.md",
     "Explizite Differentialgleichungen.md",
-    "Banachscher Fixpunktsatz.md",
     "Mannigfaltigkeiten.md",
-    "Metrischer Raum.md",
     "Untitled 1.md",
     "Topologische Räume.md",
     "Stetige Funktionen auf Kompakten Mengen.md",
@@ -244,10 +291,6 @@
     "Untitled.md",
     "Multiindex Notation.md",
     "Funktionenfolgen.md",
-    "Extremwertaufgaben.md",
-    "Eigenwerte.md",
-    "Der Funktionenraum.md",
-    "Reguläre Abbildung.md",
     "ANA 2/collection.media/paste-fcecbc308f5fa6d572f0e7500a5fb75f084393b2.jpg",
     "ANA 2/collection.media/paste-f8952c348ea00417b614cc7999c8bde857c453fc.jpg",
     "ANA 2/collection.media/paste-f79c72d43c3527b566040dfd410f2ba230224d92.jpg",

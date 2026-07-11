@@ -624,6 +624,8 @@ $mu_(A,x)$ teilt offensichtlich jedes annulierend epolynom
             A "ist ähnlich zu" mat(C_p_1, , , , ; , C_p_2; , , dots.down; , , , C_p_r)
         $
 ]
+*Testen ob FNF vorliegt*: schauen ob die Invariantenteiler sich wirklich teilen
+
 $chi_A = p_1 dot p_2 dots p_r$
 
 (Eindeutiger Repräsentant der Äquivalenzklasse der ähnlichen Matritzen)
@@ -655,6 +657,7 @@ Solange noch keine Stabiliserung eingetreten ist gelten strenge inklusionen
 ]
 
 TODO jordan normalform lemma
+
 
 $mu_alg (lambda)$ summe der Dimensionen aller Jordan-Blöcke mit dem
 Diagonaleintrag $lambda$
@@ -775,6 +778,6 @@ $dim(Q F(V)) = 1/2n (n+1)$
 TODO bei JNF gl. 38.19
 
 
-
+TODO die abbildung $f mapsto f^*$ ist inj und linear (Satz 21.6)
 
 

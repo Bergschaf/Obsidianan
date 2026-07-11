@@ -1,7 +1,7 @@
 > [!definition] Skalarprodukt
 $$(dot, dot) : V times V -> KK  $$
 heißt Skalarprodukt, wenn:
-> - **Definit**: $(v, v) >= 0 and (x,x) = 0 <=> x = 0$
+> - Positiv **Definit**: $(v, v) >= 0 and (x,x) = 0 <=> x = 0$
 > - **Symmetrisch**: $(x,y) = overline((x,y))$
 > - **Bilinear**
 
@@ -10,7 +10,12 @@ heißt Skalarprodukt, wenn:
 > [!Satz] Cauchy-Schwarz Ungleichung
 > $(a,b) in V$
 > $$abs((a,b))^2 <= (a,a)(b,b)$$
-> TODO Beweis können???
+
+>[!lemma] Cauchy-Schwarz Ungleichung Beweis
+> $$ 0 <= (u - beta v, u - beta v) = (u,u) - 2 beta (u,v) + beta^2 (v,v) $$
+> Für $(v,v) eq.not 0$ -> $beta = (u,v)/((v,v))$ ->
+> $$ 0 <= (u,u) - 2 ((u,v))^2/((v,v)) + ((u,v))^2/((v,v)) = (u,u) - ((u,v))/((v,v))$$
+
 
 
 ### Norm
