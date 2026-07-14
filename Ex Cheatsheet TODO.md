@@ -1,0 +1,6 @@
+- [ ] Maxwell gleichungen
+- [ ] Konstanten
+- [ ] Stetigkeitsbedingungen
+- [ ] Dielektrikum im E-Feld
+- [ ] Netzwerke
+- [ ] Hand-Regeln
