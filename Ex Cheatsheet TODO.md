@@ -4,3 +4,9 @@
 - [ ] Dielektrikum im E-Feld
 - [ ] Netzwerke
 - [ ] Hand-Regeln
+- [ ] Vektorpotential???
+- [ ] Magnetfeld von Leiterschleifen
+- [ ] Parallele Stromleiter
+- [ ] Hoch und Tiefpass
+- [ ] Schwingkreis (-> die ganzen Beispiele auf die Rückseite)
+9
