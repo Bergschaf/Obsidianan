@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Übersicht.md",
+                "file": "Theo Cheatsheet TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Übersicht"
+              "title": "Theo Cheatsheet TODO"
             }
           },
           {
@@ -90,9 +90,19 @@
               "icon": "lucide-file",
               "title": "Der Funktionenraum"
             }
+          },
+          {
+            "id": "5aa6b0a1762cad5c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -159,8 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "701a8f291b0fac63",
@@ -267,33 +276,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aa366181da6619c1",
+  "active": "5aa6b0a1762cad5c",
   "lastOpenFiles": [
-    "Lineare Systeme.md",
+    "Theo Cheatsheet TODO.md",
     "Ex Cheatsheet TODO.md",
+    "Extremwertaufgaben.md",
+    "Banachscher Fixpunktsatz.md",
+    "Reguläre Abbildung.md",
+    "Übersicht.md",
+    "Ampersches Gesetz.md",
+    "Experimentalphysik II.md",
+    "Randwertaufgaben.md",
+    "Lineare Systeme.md",
     "Stetigkeit linearer Abbildungen.md",
     "Stetige Funktionen auf Kompakten Mengen.md",
     "Metrischer Raum.md",
     "Fourier Reihe.md",
     "Der Funktionenraum.md",
     "Skalarprodukt.md",
-    "Übersicht.md",
     "Orthogonalsystem.md",
     "Analysis II.md",
     "Normierter Raum.md",
-    "Banachscher Fixpunktsatz.md",
     "Implizite Funktionen.md",
     "Differenzierbare Funktionen.md",
     "Anfangswertproblem Existenz von Lösungen.md",
     "Taylor Entwicklung.md",
-    "Randwertaufgaben.md",
     "Lösungsmethoden.md",
     "Extremwertaufgaben mit Nebenbedingungen.md",
     "Explizite Differentialgleichungen.md",
-    "Mannigfaltigkeiten.md",
-    "Untitled 1.md",
-    "Topologische Räume.md",
-    "Zwangsbedingungen.md",
     "fonts/Iosevka.ttf",
     "fonts/SGr-Iosevka-Thin.ttc",
     "fonts/SGr-Iosevka-SemiBold.ttc",
@@ -304,7 +314,6 @@
     "fonts/SGr-Iosevka-ExtraLight.ttc",
     "fonts/SGr-Iosevka-ExtraBold.ttc",
     "fonts/SGr-Iosevka-Bold.ttc",
-    "Untitled.md",
     "ANA 2/collection.media/paste-fcecbc308f5fa6d572f0e7500a5fb75f084393b2.jpg",
     "ANA 2/collection.media/paste-f8952c348ea00417b614cc7999c8bde857c453fc.jpg",
     "ANA 2/collection.media/paste-f79c72d43c3527b566040dfd410f2ba230224d92.jpg",

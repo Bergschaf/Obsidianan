@@ -1,12 +1,19 @@
-- [ ] Maxwell gleichungen
-- [ ] Konstanten
-- [ ] Stetigkeitsbedingungen
+- [x] Maxwell gleichungen
+- [x] Konstanten
+- [x] Stetigkeitsbedingungen
 - [ ] Dielektrikum im E-Feld
 - [ ] Netzwerke
-- [ ] Hand-Regeln
+- [x] Hand-Regeln
 - [ ] Vektorpotential???
-- [ ] Magnetfeld von Leiterschleifen
+- [ ] Magnetfeld von Leiterschleifen nd so wichtig sag i
 - [ ] Parallele Stromleiter
-- [ ] Hoch und Tiefpass
+- [x] Hoch und Tiefpass
 - [ ] Schwingkreis (-> die ganzen Beispiele auf die Rückseite)
-9
+- [ ] Genaueres zum Kopplungsgrad???? (und die weirden diagramme)
+- [x] Kopplung über C, R
+- [x] Schaltung für ungedämpfte Schwingungen
+- [ ] Fourier Trafo
+- [x] Fresnel, brewster
+- [x] TODO Rest nach totalreflexion
+- [ ] Kontinuitätsgleichung
+- [ ] Fehlt noch was zu Linsen??

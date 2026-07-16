@@ -1,0 +1,9 @@
+- [ ] Lagrange Annahmen
+- [ ] **Transformationen für zylinder/Kugelkoordinaten**
+- [ ] 2D Taylor???
+- [ ] cosh und sinh
+- [ ] Beispiele für Trägheitsmomente
+- [ ] **Rollbewegungen** (nicht so deep)
+- [ ] Phasenraum und Trajektorien
+- [x] Bed. für vollständige differentiale
+- [ ] Antwortgrößen von Zettel 12
