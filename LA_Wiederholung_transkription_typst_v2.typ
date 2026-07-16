@@ -13,13 +13,13 @@
         left: 0.2cm,
         right: 0.2cm,
     ),
-    columns: 3, // three columns to pack more text
+    columns: 4, // three columns to pack more text
 )
 
-#set columns(gutter: 0.4em)
+#set columns(gutter: 0.3em)
 #set text(
     font: "Libertinus Serif", // readable serif
-    size: 9pt, // small but legible
+    size: 8pt, // small but legible
 )
 
 #set par(
@@ -29,6 +29,9 @@
 
 // Optionally remove headers/footers if you don’t need them:
 #set page(header: none, footer: none)
+
+#show math.equation.where(block: true): set block(above: 0.5em, below: 0.5em)
+#show math.equation.where(block: false): set block(above: 0em, below: 0em)
 
 #let _compact-mathblock(title, content, fill: rgb(100, 100, 100)) = block(
     //fill: fill, // TODO anders fü
@@ -202,7 +205,7 @@ $(A lt B)^(-1) = A^(-1) lt B^(-1)$
 #let Rang = "Rang"
 *$Rang(A lt B) = Rang(A) Rang(B)$*
 
-== Darstellung von Tensoren
+=== Darstellung von Tensoren
 #let tensor = $times.o$
 (alle VR endlichdimensional)
 $B_U = (u_i) B_V = (v_j)$
@@ -226,7 +229,7 @@ Sei $A$ Komponentenmatrix von $t ∈ U ⊗ V$.
 $ tilde(A) = T_(B_U ← tilde(B_U)) A T_(B_V ← tilde(B_V)) $
 */
 
-== Tensoren als lineare Abbildungen
+=== Tensoren als lineare Abbildungen
 
 $ I : U ⊗ V =^~ Hom(V^*, U) := u ⊗ v ↦ ⟨·, v⟩ u $
 $ Phi^(-1)_(B_(U tensor V))(t) = M_(U <- V*)(I(t) $
@@ -439,7 +442,7 @@ $p(λ) = 0 ⇔ (t-λ) | p$
 
 $p = (t-λ_1)^(n_1) ⋯ (t-λ_s)^(n_s) · q$ ($q$ keine Nullstellen)
 
-== Normalformen von Endos
+=== Normalformen von Endos
 
 #let Endo = $op("Endo")$
 $ M_(B_V ← B_V)(Endo(V), +, dot, compose) ≅ (K^(n × n), +, ·, o) $
@@ -460,9 +463,9 @@ sodass
 /*
 $ M_(B_V ← B_V)(f) =
 mat(A_11, 0, …, 0;
- 0, A_22, …, 0;
- ⋮, ⋮, ⋱, ⋮;
- 0, 0, …, A_(n n)) $
+0, A_22, …, 0;
+⋮, ⋮, ⋱, ⋮;
+0, 0, …, A_(n n)) $
 */
 #let diag = "diag"
 $M_(B_V <-B_V)(f) = diag(A_11, dots, A_(n n))$ (Blockdiagonalgestalt)
@@ -528,7 +531,7 @@ TODO Spektralzerlegung
     - $x_A$ zerfällt in Linearfaktoren und
     - $mu_geo(A, λ_i) = mu_alg(A, λ_i)$ für alle $i$.
     - $mu_A$ zerfällt vollständig in Linearfaktoren und besitzt nur einfache
-        Nullstellen
+    Nullstellen
 ]
 
 $n$ paarweise verschiedene EW $=>$ diagonalisierbar
@@ -700,7 +703,7 @@ $calm_(hat(B)_(V^*) <- hat(B)_V)(gamma) = calt_(hat(B)_(V^*) <- B_(V^*)) calm_(B
 == Equivalenzklassen von Strukturmatritzen
 - *Äquivalenz* (für $Hom(V, W)$): $S^(-1) A T$ erhält Rang, Rang NF
 - *Ähnlichkeit* (für $Endo(V)$): $T^(-1) A T$ erhält Rang, $chi_A$, $mu_A$,
-    $Lambda$, FNF, JNF
+$Lambda$, FNF, JNF
 - *Kongruenz* (für $Bil(V, V)$): $T^T A T$ erhält Rang, Symmetrie
 
 #definition("Rang einer Bilinearform")[
@@ -753,7 +756,7 @@ $q_gamma(u) = gamma(u, u)$
 
 $dim(Q F(V)) = 1/2n (n+1)$
 - Symmetrische Bilinearform ist durch Werte auf der Diagonalen der
-    Darstellungsmatrix festgelegt
+Darstellungsmatrix festgelegt
 - jede symm. Matrix ist kongruent zu einer Diagonalmatrix
 
 #lemma[
@@ -770,6 +773,83 @@ $dim(Q F(V)) = 1/2n (n+1)$
 ]
 
 == Relle Vektorräume
+Ab jetzt $V$ $RR$-VR, $gamma in Bil_"sym" (V,V)$
+#theorem[
+    - $V$ besitzt $gamma$-OB mit
+        $calm_(B_V^* <- B^V) (gamma) = diag(bb(1)_(n_+)bb(1)_(n_(-))0_(n_0)) quad (*)$
+    - $"signature"(gamma) := (n_+, n_(-), n_0)$
+]
+#theorem("Sylvester")[
+    $A in RR^(n times n)$ sym. $exists T in RR^(n times n)$, $T$ regulär mit
+    $T^T A T = (*)$
+]
+
+== Innenprodukte
+
+#definition("Postiv Definit")[
+    $gamma(v, v) > 0 forall v in V \\ {0}$
+]
+#lemma[
+    $gamma$ pos. def. $<=>$ Strukturmatrix hat nur positive diagonaleinträge
+    bzgl beliebiger Basis
+]
+
+#definition("Innenprodukt")[
+    symmetrisch, positiv definit
+]
+
+#lemma[
+    $gamma$ pos. defin $=> gamma^(2)$ bijektiv.
+]
+
+#theorem("Cauchy Schwarz")[$gamma(u, v)^2 <= gamma(u, u) gamma(v, v)$]
+
+#definition("Norm")[
+    pos. def., *absolut* homogen, dreiecksungleichung
+]
+$abs(norm(u) - norm(v)) <= norm(u - v)$
+
+#theorem("Jordan-von Neumann")[
+    - $norm(dot)$ wird von innenprodukt $gamma$ auf $V$ induziert.
+    - $norm(u+v)^2 + norm(u-v)^2 = 2 norm(u)^2 + 2 norm(v)^2$
+    $gamma(u, v) := 1/4(norm(u+v)^2 - norm(u-v^2))$
+
+]
+#definition("Winkel")[
+    $angle (U,v) := arccos (gamma(u, v)/(norm(u)norm(v)))$
+]
+#lemma("Gram Schmidt")[
+    $u_j <- v_j - sum_(i=1)^(j-1) gamma(v_j, u_i)/gamma(u_j, u_j)$
+]
+
+#definition("Isometrisch/Orthogonaler Hom.")[
+    (äquivalent:)
+    - $gamma_2(f(u),f(v)) = gamma_1 (u,v)$
+    - $norm(f(v))_gamma_2 = norm(v)_gamma_1$
+    - $norm(f(v_1) - f(v_2))_gamma_2 = norm(v_1 - v_2)_gamma_1$
+]
+isometrische Homomorphismen sind *injektiv*
+
+$Lambda(f) subset.eq {plus.minus 1}$
+
+#definition("Isometrische Matrix")[
+    - $M_1 in RR^(m times m)$, $M_2 in RR^(n times n)$ beide sym. und pos. def,
+        $A in RR^(n times m)$ heißt $(M_1, M_2)$ isometrisch, wenn
+        $A^T M_2 A = M_1$
+    - $A in RR^(n times n) => A^T M A = M$
+
+]
+
+#definition("Orthogonale Gruppe")[
+    $O(V,gamma) = {f in Endo(V) | f "ist" gamma "isometrisch"}$
+]
+
+$S O$ mit $det(f) = 1$
+
+
+
+
+
 
 
 
