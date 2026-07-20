@@ -84,28 +84,26 @@ $V^* ≅ V$ (falls $dim V < infinity$) durch
 $ T_B : V^* → K^n, v^* ↦ (v^*(v_i))_(i=1)^n $
 (Zuordnung einer linearen Form zu den Bildern der Basis)
 
-(für $dim(V) ∈ NN$ gleichdimensional, im Unendlichen kann $dim(V^*) > dim(V)$
-gelten)
-
+//(für $dim(V) ∈ NN$ gleichdimensional, im Unendlichen kann $dim(V^*) > dim(V)$ gelten)
 
 === Basiswechsel
+$B = (v_i)_(i∈I)$ und $tilde(B) = (tilde(v_i))_(i∈I)$ Basen von $V$. Dann gilt
+$T_(B^* ← tilde(B)^*) = T_(B ← tilde(B))^(-T)$
 
-Seien $B = (v_i)_{i∈I}$ und $tilde(B) = (tilde(v_i))_{i∈I}$ Basen von $V$. Dann
-gilt $T_(B^* ← tilde(B)^*) = T_(B ← tilde(B))^(-T)$
-
-(LA1: $(T_(B <- tilde(B)))^T = T_(tilde(B) <- B)$)
+(LA1: $(T_(B <- tilde(B)))^(-1) = T_(tilde(B) <- B)$)
 
 === Annihilator
 
 #let Set = "Set"
 $(M : Set V)^0 := {v^* ∈ V^* | (v^*, v) = 0 quad forall v ∈ M}
-= {v^* ∈ V^* | M ⊆ ker(v^*)} = ⋂_(v∈M) ker(v^*) ⊆ V^*$
+= {v^* ∈ V^* | M ⊆ ker(v^*)} = ⋂_(v∈M) {v}^0 ⊆ V^*$
 
 Für $F ⊆ V^*$:
 $prea(F) := {v ∈ V | (v^*, v) = 0 quad forall v^* ∈ F} = ⋂_(v^*∈F) ker(v^*) ⊆ V$
-sind beides Unterräume und es gilt $M^0 = chevron.l M chevron.r^0$ und
-$prea(F) = prea(chevron.l F chevron.r)$
 
+
+beides Unterräume und $M^0 = chevron.l M chevron.r^0$ und
+$prea(F) = prea(chevron.l F chevron.r) quad$
 $prea((M^0)) = M quad (prea(F))^0 = F$
 
 Wenn $(v_1, …, v_k)$ Basis von $U ⊆ V$, dann ist $(v_(k+1)^*, …, v_n^*)$ eine
@@ -132,34 +130,32 @@ $A ∈ K^(m × n) quad coBild(A) = Bild(A^T) quad coKer(A) = ker(A^T)$
 
 $(V \/ U)^* =^~ U^0 quad V* \/ U^0 =^~ U*$
 
-TODO: Iso hinschreiben
+//TODO: Iso hinschreiben
 
-TODO: bisschen Faktor-Sachen
+//TODO: bisschen Faktor-Sachen
 
-== Bidualraum
+=== Bidualraum
 
-Kanonische Injektion $i_V : V → V^{**}, v ↦ ⟨·, v⟩$
-
-Surjektiv im endlichdimensionalen Fall.
+Kanonische *Injektion* $i_V : V → V^(**), v ↦ ⟨·, v⟩$ *Surjektiv* im
+endlichdimensionalen
 
 Annihilatoren im Dualraum: $F ⊆ V^*$
-$F^0 = i_V (prea(F))$
-
-$((U)^0)^0 = i_V (U)$
+$F^0 = i_V (prea(F)) quad ((U)^0)^0 = i_V (U)$
 
 #definition("Bidualer Homomorphismus")[
     $f : V → W quad f^(**) : V^(**) → W^(**), v^(**) ↦ v^(**) ∘ f^*$]
-TODO Diagramm ist kommutativ.
-
+//TODO Diagramm ist kommutativ.
 
 // Was ??? $ M_(B_{V^{**}} ← B_{W^{**}})(f^{**}) = (M_(B_V ← B_W)(f))^T $
 
 === Bilineare Abbildungen
 
 sind ein UVR von $W^(U × V)$ (= $U × V → W$), eindeutig durch Bilder auf dem
-Produkt der Basen festgelegt. TODO diagramm Für jedes bilineare $b : U × V → W$
-gibt es ein eindeutiges, lineares $f : T → W$, sodass
-$b = f ∘ ⊗$
+Produkt der Basen festgelegt.
+#theorem("UP von TP")[
+    Für jedes bilineare $b : U × V → W$ gibt es ein eindeutiges, lineares
+    $f : T → W$, sodass
+    $b = f ∘ ⊗$]
 
 $Bil (U, V; W) ≅ Hom(U ⊗ V, W)$
 
@@ -171,15 +167,15 @@ Elementartensoren bilden ein Erzeugendensystem:
 $(u_i ⊗ v_j)_(i,j∈I×J)$
 $quad dim(U ⊗ V) = dim(U) · dim(V)$
 
-TODO wie zeigt man rang von Tensoren?? Rang von $t ∈ U ⊗ V$: minimale Anzahl an
-Summanden, sodass
+//TODO wie zeigt man rang von Tensoren??
+Rang von $t ∈ U ⊗ V$: minimale Anzahl an Summanden, sodass
 $t = sum_i α_i u_i ⊗ v_i$
 
 
-$u ⊗ v = 0 ⇔ u = 0 or v = 0$
+*$u ⊗ v = 0 ⇔ u = 0 or v = 0$*
 
 
-== Tensorprodukt linearer Abbildungen
+=== Tensorprodukt linearer Abbildungen
 
 $f_1 : U_1 → V_1 quad f_2 : U_2 → V_2$
 
@@ -194,7 +190,8 @@ $A = M_(B_(V_1) ← B_U_1)(f_1) quad B = M_(B_V_2 ← B_U_2)(f_2)$
 Wir ordnen $B_(V_1 ⊗ V_2)$ und $B_(U_1 ⊗ U_2)$ lexikographisch.
 
 $
-    M_(B_(V_1 ⊗ V_2) ← B_(U_1 ⊗ U_2))(f_1 lt f_2) = A lt B in K^(n_1 n_2 × m_1 m_2)
+    M_(B_(V_1 ⊗ V_2) ← B_(U_1 ⊗ U_2))(f_1 lt f_2) = \
+    A lt B in K^(n_1 n_2 × m_1 m_2)
 $
 *Kroneckerprod.*:$A lt B = mat(a_11 B, a_12 B, dots; dots.v)$
 - bilinear
@@ -205,19 +202,19 @@ $(A lt B)^(-1) = A^(-1) lt B^(-1)$
 #let Rang = "Rang"
 *$Rang(A lt B) = Rang(A) Rang(B)$*
 
-=== Darstellung von Tensoren
 #let tensor = $times.o$
-(alle VR endlichdimensional)
-$B_U = (u_i) B_V = (v_j)$
+$dim(U) = n quad dim(V) = m$
 
-$
-    Phi_(B_U tensor B_V) : K^(n × m) ≅ U ⊗ V,
-    A ↦ sum_(i=1)^n sum_(j=1)^m a_(i j) (u_i ⊗ v_j)
-$
+
+$B_U = (u_i) B_V = (v_j)$
+#definition("Darstellung von Tensoren")[
+    $
+        Phi_(B_U tensor B_V) : K^(n × m) ≅ U ⊗ V := \
+        A ↦ sum_(i=1)^n sum_(j=1)^m a_(i j) (u_i ⊗ v_j)
+    $
+]
 $ U^* ⊗ V^* ≅ (U ⊗ V)^* $
-Rang eines Tensors ist Rang der Komponentematrix.
-$t ∈ U ⊗ V$
-$Rang(t) = Rang(Phi_(B_U, B_V)^-1(t))$
+*$Rang(t : U tensor V) = Rang(Phi_(B_(U tensor V))^(-1) (t))$*
 
 $⇒ Rang(t) ≤ min{dim(U), dim(V)}$
 /*
@@ -231,8 +228,8 @@ $ tilde(A) = T_(B_U ← tilde(B_U)) A T_(B_V ← tilde(B_V)) $
 
 === Tensoren als lineare Abbildungen
 
-$ I : U ⊗ V =^~ Hom(V^*, U) := u ⊗ v ↦ ⟨·, v⟩ u $
-$ Phi^(-1)_(B_(U tensor V))(t) = M_(U <- V*)(I(t) $
+$ I : U ⊗ V =^~ Hom(V^*, U) = u ⊗ v ↦ ⟨·, v⟩ u $
+$ Phi^(-1)_(B_(U tensor V))(t) = M_(U <- V^*) (I(t)) $
 
 === Multilineare Dinge
 
@@ -255,17 +252,20 @@ mit $x^(i)_k in K^(k)$ und
 $x_1 lt x_2 = vec(x_11, dots.v, x_(1 n))mat(x_21, dots, x_(2 n))$ TODO geht das
 eleganter ^
 
-$Phi_B_(V_1 tensor dots tensor V_n) : K^(n_1 times dots n_N) -> times.o.big_(k=1)^N V_k := A mapsto sum_(i_1 = 1)^(dim(V_1)) dots sum_(i_N = 1)^(dim(V_n)) a_(i_1 dots i_N) (v_1^(i_1) tensor dots tensor v_n^(i_N))$
+$
+    Phi_B_(V_1 tensor dots tensor V_n) : K^(n_1 times dots n_N) -> times.o.big_(k=1)^N V_k := \
+    A mapsto sum_(i_1 = 1)^(dim(V_1)) dots sum_(i_N = 1)^(dim(V_n)) a_(i_1 dots i_N) (v_1^(i_1) tensor dots tensor v_n^(i_N))
+$
 
-TODO ist das ISO?
+//TODO ist das ISO?
 
 $Rang(t) = Rang(A)$
 Sind auch lineare Abbildungen. TODO genauer???
 
-== Tensoren über einem VR
+=== Tensoren über einem VR
 #let calt = $cal(T)$
-$ calt^(r,s)(V) := V tensor "r-mal" tensor V ⊗ (V^*) tensor "s-mal" tensor V^* $
-Bissl unnötiges Zeug
+$calt^(r,s)(V) := V tensor "r-mal" tensor V ⊗ (V^*) tensor "s-mal" tensor V^*$
+//Bissl unnötiges Zeug
 
 
 #definition("Permutation")[
@@ -528,8 +528,8 @@ TODO Spektralzerlegung
 #lemma([Diagonalsierbar $<=>$])[
     - $ sum_(i=1)^s mu_geo(A, λ_i) = n $
 
-    - $x_A$ zerfällt in Linearfaktoren und
-    - $mu_geo(A, λ_i) = mu_alg(A, λ_i)$ für alle $i$.
+    - $x_A$ zerfällt in Linearfaktoren und $mu_geo(A, λ_i) = mu_alg(A, λ_i)$ für
+        alle $i$.
     - $mu_A$ zerfällt vollständig in Linearfaktoren und besitzt nur einfache
     Nullstellen
 ]
@@ -795,7 +795,7 @@ Ab jetzt $V$ $RR$-VR, $gamma in Bil_"sym" (V,V)$
 ]
 
 #definition("Innenprodukt")[
-    symmetrisch, positiv definit
+    symmetrisch, positiv definit (*bilinearität* prüfen nd vergessen)
 ]
 
 #lemma[
@@ -819,7 +819,7 @@ $abs(norm(u) - norm(v)) <= norm(u - v)$
     $angle (U,v) := arccos (gamma(u, v)/(norm(u)norm(v)))$
 ]
 #lemma("Gram Schmidt")[
-    $u_j <- v_j - sum_(i=1)^(j-1) gamma(v_j, u_i)/gamma(u_j, u_j)$
+    $u_j <- v_j - sum_(i=1)^(j-1) gamma(v_j, u_i)/gamma(u_i, u_i) u_i$
 ]
 
 #definition("Isometrisch/Orthogonaler Hom.")[

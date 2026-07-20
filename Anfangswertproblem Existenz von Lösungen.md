@@ -3,7 +3,7 @@ $$y'(t) = f(t, y(t))$$
 > Die Funktion $f(t,x)$ sei stetig auf dem $(n+1)$ dimensionalen Zylinder 
 > $$D = {(t,x) in RR times RR^n | abs(t - t_0) <= alpha, norm(x - y_0) <= beta}$$
 > Dann existiert eine Lösung $y(t)$ auf dem Intervall $I := [t_0 - T, t_0 + T]$ mit 
-> $$ T := min (alpha, beta/M), M := max_((t,x) in D) norm((f,t(x)))$$
+> $$ T := min (alpha, beta/M), M := max_((t,x) in D) norm(f(t,x))$$
 
 > TODO bedingung siehe skript
 

@@ -17,3 +17,5 @@
 - [x] TODO Rest nach totalreflexion
 - [ ] Kontinuitätsgleichung
 - [ ] Fehlt noch was zu Linsen??
+
+- [ ] Wichtige Einheiten
