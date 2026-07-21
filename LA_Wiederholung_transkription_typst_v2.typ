@@ -39,6 +39,7 @@
     radius: 4pt,
     stroke: 1pt + fill,
     spacing: 5pt,
+    width: 100%,
     [#if title != none [*#title* ]
         #content
     ],
@@ -249,8 +250,8 @@ $A ∈ K^(n_1 × … × n_N) quad Rang(A)$ : minimale Anzahl an Summanden, sodas
 $A = sum_(i=1)^n x_1^(i) lt dots lt x_N^(i)$
 
 mit $x^(i)_k in K^(k)$ und
-$x_1 lt x_2 = vec(x_11, dots.v, x_(1 n))mat(x_21, dots, x_(2 n))$ TODO geht das
-eleganter ^
+$x_1 lt x_2 = vec(x_11, dots.v, x_(1 n))mat(x_21, dots, x_(2 n))$
+
 
 $
     Phi_B_(V_1 tensor dots tensor V_n) : K^(n_1 times dots n_N) -> times.o.big_(k=1)^N V_k := \
@@ -260,7 +261,8 @@ $
 //TODO ist das ISO?
 
 $Rang(t) = Rang(A)$
-Sind auch lineare Abbildungen. TODO genauer???
+//$V tensor W =^~ Hom(V, W*) := t mapsto chevron.l dot, v chevron.r u$
+
 
 === Tensoren über einem VR
 #let calt = $cal(T)$
@@ -290,9 +292,9 @@ $forall i ≠ j; v_i = v_j ⇒ t(v_1, …, v_r) = 0$
     $t$ ist alternierend ⇔ $t(v_1, …, v_r) = 0$ für linear abhängige Familien
     $(v_i)$.]
 
-TODO Zusammenhang zwischen Schief und Alt (for quizfragen)
+//TODO Zusammenhang zwischen Schief und Alt (for quizfragen)
 
-TODO Dimensionsformel dafür
+//TODO Dimensionsformel dafür
 
 *Symmetrisierung*:$t ↦ 1/r! sum_(sigma∈S_r) P_sigma(t)$
 
@@ -393,34 +395,27 @@ unabhängiges Erzeugendensystem).
 endlich frei, wenn die Basis dazu noch endlich ist.
 
 Sei $R$ komm. Ring mit Eins und $M$ endlich frei unitär, dann ist $M$ iso zu
-$R^n$ mit $n = |B_M|$.
-
-$Rang(M) = n$
+$R^n$ mit $n = |B_M|$. $Rang(M) = n$
 
 #definition("Algebra")[
     $(A, +, ·)$ ist $R$-Modul.
 
-    $(A, +, *)$ ist Ring.
-
-    $*$ assoziativ mit $·$]
+    $(A, +, *)$ ist Ring. $*$ assoziativ mit $·$]
 
 kommutativ, wenn $*$ komm.
 
 unitär, wenn $(A, +, *)$ unitär.
 
-mit Eins, wenn es ein bzgl. $*$ neutrales Element gibt.
+mit Eins, wenn es ein bzgl. $*$ neutrales Element gibt. $*$ ist *bilinear*.
 
-$*$ ist bilinear.
-
-$U$ ist Unteralgebra ⇔ $a-b ∈ U,; α · a ∈ U,; a * b ∈ U$.
+$U$ ist Unteralgebra ⇔ $a-b ∈ U, α · a ∈ U, a * b ∈ U, quad forall a, b in U$.
 #lin
 
-$R$ komm Ring, $(A, +, dot, *)$ unitäre Algebra mit eins über $R$
+Sei $R$ komm Ring, $(A, +, dot, *)$ unitäre Algebra mit eins über $R$
 #definition("Einsetzungshomomorphismus")[
-    $ e v_a : R[ŧ] -> R := p mapsto p(a) $
+    $ e v_a : R[ŧ] arrow.tilde^1 R := p mapsto p(a) $
 ]
-$f : A_1 ->^~ A_2 quad f compose e v_a = e v_(f(a))$
-TODO diagramm
+$f : A_1 arrow.tilde A_2 quad f compose e v_a = e v_(f(a))$
 
 #definition("Polynomfunktion")[
     $ Phi : (R[t], +, ·) → (A^A, +, ·, *) := p ↦ p(·) $
@@ -430,13 +425,11 @@ Homomorphismus von Algebren mit Eins.
 Unendlich ⇒ $Phi$ injektiv (sonst ggf. nicht).
 
 === Polynomdivision
-$p_2 | p_1 := ∃ q ∈ R[t],; p_1 = q p_2$
+$p_2 | p_1 : "Prop" := ∃ q ∈ R[t], p_1 = q p_2$
 
-$∀ p_1, p_2 ∃ q, r ∈ K[t] : p_1 = q p_2 + r deg(r) < deg(p_2)$
+$∀ p_1, p_2 ∃ q, r ∈ K[t] : p_1 = q p_2 + r quad deg(r) < deg(p_2)$
 
-TODO Polynomdivision
-
-$K[t]$ ist ein Hauptidealring.
+$K[t]$ ist ein Hauptidealring $I = (p)$.
 
 $p(λ) = 0 ⇔ (t-λ) | p$
 
@@ -445,14 +438,14 @@ $p = (t-λ_1)^(n_1) ⋯ (t-λ_s)^(n_s) · q$ ($q$ keine Nullstellen)
 === Normalformen von Endos
 
 #let Endo = $op("Endo")$
-$ M_(B_V ← B_V)(Endo(V), +, dot, compose) ≅ (K^(n × n), +, ·, o) $
+$ M_(B_V ← B_V) : (Endo(V), +, dot, compose) ≅ (K^(n × n), +, ·, o) $
 
 Isomorphismus von Algebren mit Eins.
 
 #definition("Ähnlich")[
     $A, tilde(A) ∈ K^(n × n)$ heißen ähnlich, wenn es eine invertierbare Matrix
     $T ∈ K^(n × n)$ gibt, sodass
-    $tilde(A) = T^-1 A T$]
+    $tilde(A) = T^(-1) A T$]
 ⇒ Darstellungsmatrix vom gleichen Endo nur mit anderer Basis.
 
 #definition("Invariant")[
@@ -470,7 +463,6 @@ mat(A_11, 0, …, 0;
 #let diag = "diag"
 $M_(B_V <-B_V)(f) = diag(A_11, dots, A_(n n))$ (Blockdiagonalgestalt)
 
-
 === Eigenwerte / Vektoren
 
 $f(v) = λ v quad (v ≠ 0)$
@@ -481,15 +473,12 @@ $Eig(A, λ) = {x ∈ K^n | A x = λ x} = ker(λ I - A)$
 #let alg = "alg"
 
 #definition("Geometrische Vielfachheit")[
-
     $mu_geo = dim(Eig(A, λ))$
 ]
 $f$ ist injektiv ⇔ $0$ ist kein EW von $f$. (wenn $dim(V) < ∞$, dann sogar $f$
 bijektiv ⇔)
 
-$A$ ist regulär ⇔ $0$ ist kein EW von $A$.
-
-$ker(λ I - A) = "Lösung von" (λ I - A)x = 0$
+$ker(λ I - A) = "Lsg. von" ((λ I - A)x = 0)$
 
 #definition("Spektrum")[
     $Lambda(f) := {λ | λ "ist EW von" f}
@@ -509,11 +498,11 @@ $mu_alg(A, λ_i) = n_i$
 (Exponent des Linearfaktors $(t-λ_i)$ in der eindeutigen Zerlegung des Polynoms)
 
 #let ii = $i i$
-#definition("Spur")[$Spur(A) = sum_(i=1)^n a_ii$]
+//#definition("Spur")[$Spur(A) = sum_(i=1)^n a_ii$]
 
-$ 1 ≤ mu_geo(A, λ) ≤ mu_alg(A, λ) ≤ n $
+$ 1 ≤ mu_geo (A, λ) ≤ mu_alg (A, λ) ≤ n $
 
-$x_A = x_(hat(A))$
+$chi_A = chi_(hat(A))$
 (ähnliche Matrizen besitzen das selbe charakteristische Polynom)
 $⇒ Spur(A) = Spur(A^T)$
 (ähnliche Matrizen haben die selbe Spur)
@@ -523,25 +512,21 @@ $⇒ Spur(A) = Spur(A^T)$
 
 ⇒ Eigenbasis, wenn alle Basisvektoren EVs sind.
 
-TODO Spektralzerlegung
-
 #lemma([Diagonalsierbar $<=>$])[
-    - $ sum_(i=1)^s mu_geo(A, λ_i) = n $
+    - $sum_(i=1)^s mu_geo (A, λ_i) = n$
 
     - $x_A$ zerfällt in Linearfaktoren und $mu_geo(A, λ_i) = mu_alg(A, λ_i)$ für
         alle $i$.
     - $mu_A$ zerfällt vollständig in Linearfaktoren und besitzt nur einfache
-    Nullstellen
+        Nullstellen
 ]
 
 $n$ paarweise verschiedene EW $=>$ diagonalisierbar
 
-
 #definition("Projektor")[$P^2 = P$]
 $V = Bild(P) ⊕ ker(P)$
-
-Sei $V = U ⊕ W$ (Zerlegung in Komplementäre), dann $P : V → V$ mit $Bild(P)=U$
-und $ker(P)=W$.
+Sei $V = U ⊕ W$ (Zerlegung in Komplementäre), dann $exists P : V → V$ mit
+$im(P)=U$ und $ker(P)=W$.
 
 Komplementärer Projektor: $id - P$.
 
@@ -554,14 +539,13 @@ $=> exists p in K_(n-1) [t], A^(-1) = p(A)$
 
 (gilt da $alpha_0 = (-1)^n det(A) eq.not 0$ wenn A invertierbar)
 
-#lemma[Die annulierenden Polynome bilden ein Ideal $J_A$]
+#lemma[$J_A :=$ annulierenden Polynome (ein Ideal)]
 #definition("Minimalpolynom")[
-    Das normierte Polynom kleinsten grades mit $mu_A in J_A \\ {0}$ Das
-    normierte Polynom kleinsten grades mit $mu_A in J_A \\ {0}$
+    normiertes Polynom kleinsten grades mit $mu_A in J_A \\ {0}$
 ]
-Ähnliche matritzen haben die selben Minimalpolynome
+$A$, $hat(A)$ ähnlich: $mu_A = mu_hat(A)$
 
-=== Minimalpolynom bestimmen (nervig) (TODO wichtig?)
+=== Minimalpolynom bestimmen
 $F = mat("vec"(A^0), "vec"(A^1), dots, "vec"(A^n)) in K^(n^2 times (n +1))$
 -> ZSTF
 
@@ -579,15 +563,14 @@ $mu_A$ und $chi_A$ haben die selben Nullstellen
 
 
 
-$p = t^n + sum_(i = 1)^(n-1) alpha_i t^i$ normiert
 #definition("Begleitmatrix")[
+    Sei $p = t^n + sum_(i = 1)^(n-1) alpha_i t^i$ normiert
     $
         C_p = mat(0, dots, dots, 0, -alpha_0; 1, dots.down, , , -alpha_1; 0, dots.down, dots.down, , -alpha_2; dots.v, quad, dots.down, 0, dots.v; 0, dots, 0, 1, -alpha_(n-1))
     $
 ]
-$chi_(C_p) = mu_(C_p) = p$
-
-== Frobenius Normalform
+$ chi_(C_p) = mu_(C_p) = p $
+=== Frobenius Normalform
 #let Kry = $cal(K)$
 #definition("Krylov-Unterraum")[
     $
@@ -597,22 +580,23 @@ $chi_(C_p) = mu_(C_p) = p$
 $Kry_infinity (A; x)$ (vereinigung über alle k) => der von *x erzeugete
 $A$-zyklische Unterraum* (der kleinste $A$ invariante UR, der $x$ enthält)
 
-#lemma("Lokal annullierende Polynome bilden ein Ideal")[
-    $ J_(A,x) := {p in K[t] | p(A) x = 0} $
+#lemma("Lokal annullierende Polynome")[
+    $J_(A,x) := {p in K[t] | p(A) x = 0}$
 ]
 $->$ lokales minimalpolynom wird definiert
 
 Bestimmung ähnlich wie bei $mu_A$, man prüft jetzt allerdings
 $A^0 x, A^1 x, dots$ auf lineare unabh.
 
-
-$mu_(A,x)$ teilt offensichtlich jedes annulierend epolynom
+$mu_(A,x)$ teilt jedes annulierende polynom
 
 #lemma("Zerlegung in Komplementäre Unterräume")[
-    Sei $x in K^n$ so gewählt, dass
-    $ deg(mu_(A,x)) = d = max{deg(mu_(A,y)) | y in K^n} $
-    Basis: $B = (x, A x, dots, A^(d-1), x_(d+1), dots, x_n)$ TODO wilde sachen
-    ->
+    Sei $x in K^n$ so, dass
+    $deg(mu_(A,x)) = d = max{deg(mu_(A,y)) | y in K^n}$
+
+
+    Basis: $B = (x, A x, dots, A^(d-1), x_(d+1), dots, x_n)$
+
     $ exists W, K^n = Kry_d (A;x) plus.o W $
 ]
 #lemma("Das lokale Minimalpolynom maximalen Grades ist das Minimalpolynom")[
@@ -624,17 +608,18 @@ $mu_(A,x)$ teilt offensichtlich jedes annulierend epolynom
     $deg(p_j) >= 1$ und
     - $p_1 = mu_A$ und $p_(j+1) divides p_j$
     - $
-            A "ist ähnlich zu" mat(C_p_1, , , , ; , C_p_2; , , dots.down; , , , C_p_r)
+            A "ist ähnlich zu" diag(C_p_1 dots C_p_i dots C_p_r)
         $
 ]
-*Testen ob FNF vorliegt*: schauen ob die Invariantenteiler sich wirklich teilen
+#text(red)[Testen ob FNF vorliegt]: schauen ob die Invariantenteiler sich
+wirklich teilen
 
-$chi_A = p_1 dot p_2 dots p_r$
+*$chi_A = p_1 dot p_2 dots p_r$*
 
-(Eindeutiger Repräsentant der Äquivalenzklasse der ähnlichen Matritzen)
-== Jordan Normalform
-Existiert, wenn das charakteristische Polynom vollständig in Linearfaktoren
-zerfällt
+Basis: Summe der Basen der Krylov Unterräume
+//(Eindeutiger Repräsentant der Äquivalenzklasse der ähnlichen Matritzen)
+=== Jordan Normalform
+Existiert, wenn $chi_A$ vollständig in Linearfaktoren zerfällt
 
 #definition("Verallgemeinerter Eigenvektor der Stufe k")[
     $(lambda I - A)^k x = 0$
@@ -659,9 +644,11 @@ Solange noch keine Stabiliserung eingetreten ist gelten strenge inklusionen
     $
 ]
 
-TODO jordan normalform lemma
+//TODO jordan normalform lemma
 
-
+$d_j (lambda) = dim(ker(f - lambda id)^j) - dim(ker(f - lambda id)^(j-1)) = Rang((f-lambda id)^(j-1)) - Rang((f-lambda id)^j)$
+$d_j (lambda)$ Anzahl der Bläcke mit $>= j times j$
+==== JNF lesen
 $mu_alg (lambda)$ summe der Dimensionen aller Jordan-Blöcke mit dem
 Diagonaleintrag $lambda$
 
@@ -670,10 +657,8 @@ $mu_geo (lambda)$ anzahl der Jordanblöcke mit Diagonaleintrag $lambda$
 *Vielfachheit von $lambda$* in $mu_A$ ist die Größe des größten Jordan Blocks
 mit Diagonaleintrag $lambda$
 
-TODO Begleitmatrix
-
 #definition("Bilinearform")[
-    $gamma : V times V -> K in Bil(V, V)$ mit $gamma(dot, v)$ und
+    $(gamma : V times V -> K) in Bil(V, V)$ mit $gamma(dot, v)$ und
     $gamma(v, dot)$ linear
 ]
 - *symmetrisch*: $gamma(u, v) = gamma(v, u)$
@@ -686,38 +671,41 @@ jede alternierende Bilinearform ist symmetrisch
 ]
 symm und schiefsymm $<=>$ wenn Strukturmatrix symm bzw schiefsymm
 
-$gamma^((1))(u) : V* := gamma(u, dot)$ (2) analog
+$gamma^((1))(u) : V^* := gamma(u, dot)quad$ $gamma^((2))$ analog
 
-$gamma(u, v) = x^T A y$
+$gamma(x, y) = x^T A y$
 
 #definition("Duale Bilinearform")[
-    $gamma*(u,v) = gamma(v, u)$ (für $dim(V) < infinity$)
+    $gamma^*(u,v) = gamma(v, u)$ (für $dim(V) < infinity$)
 ]
 
 #let calm = $cal(M)$
-$M_(B_V* <- B_V) : Hom(V, V*) =^~ K^(n times n)$ $Hom(V, V*) =^~ Bil(V, V)$
+$calm_(B_V^* <- B_V) : Hom(V, V^*) =^~ K^(n times n)$
+$Hom(V, V^*) =^~ Bil(V, V)$
 
 
-$calm_(hat(B)_(V^*) <- hat(B)_V)(gamma) = calt_(hat(B)_(V^*) <- B_(V^*)) calm_(B_V^* <- B^V)(gamma) calt_(B_V <- hat(B)_V)$
+$calm_(hat(B)_(V^*) <- hat(B)_V)(gamma) = calt_(hat(B)_(V^*) <- B_(V^*)) calm_(B_V^* <- B_V)(gamma) calt_(B_V <- hat(B)_V)$
 
-== Equivalenzklassen von Strukturmatritzen
+=== Möglichkeit für Matrixäquivalenz
 - *Äquivalenz* (für $Hom(V, W)$): $S^(-1) A T$ erhält Rang, Rang NF
-- *Ähnlichkeit* (für $Endo(V)$): $T^(-1) A T$ erhält Rang, $chi_A$, $mu_A$,
-$Lambda$, FNF, JNF
+- *Ähnlichkeit* (für $Endo(V)$): $T^(-1) A T$ erhält Rang, $chi_A$,
+    $mu_A$,$Lambda$, FNF, JNF
 - *Kongruenz* (für $Bil(V, V)$): $T^T A T$ erhält Rang, Symmetrie
 
-#definition("Rang einer Bilinearform")[
+#lin
+#definition("Rang Bil.form")[
     $Rang(gamma) = Rang(gamma^((2)))$
 ]
 #lemma[
     $dim(V) < infinity => Rang(gamma) = Rang(A)$ (beliebige Strukturmatrix)
-    $=> Rang(gamma) = Rang(gamma*)$
+    $=> Rang(gamma) = Rang(gamma^*)$
 ]
-#lemma("Nicht ausgeartete Bilinearform")[
+#lemma([Nicht ausgeartete Bilinearform $<=>$])[
     - $gamma^((1))$ inj
     - $gamma^((2))$ inj
     - $A$ regulär ($Rang(A) = n$)
-    - $V^perp = {0}$ (für $gamma in Bil_"sym" (V,V)$)
+    - $V^perp = {0}$
+    (für $gamma in Bil_"sym" (V,V)$)
 ]
 #definition("Orthogonal")[
     $u perp v <=> gamma(u, v) = 0$
@@ -730,13 +718,13 @@ $Lambda$, FNF, JNF
     diagonal
 ]
 #lemma[
-    $gamma in Bil_"sym", B_V = (u_j) gamma-$Orthogonalbasis von $U$.
+    $gamma in Bil_"sym", B_V = (u_j) gamma$-Orthogonalbasis von $U$.
 
     $gamma$ ist nicht ausgeartet auf $U$ $<=>$ $gamma(u_j, u_j) eq.not 0$
 ]
 
 #definition("Hom von VR mit sym Bilinearform")[
-    $f : (V,gamma_1) ->^~ (W,gamma_2), gamma_2(f(u),f(v)) = gamma_1(u,v)$
+    $f : (V,gamma_1) arrow.tilde (W,gamma_2) "ist" gamma bold("orthogonal") \ " wenn "gamma_2(f(u),f(v)) = gamma_1(u,v)$
 ]
 
 #definition("Quadratische Form")[
@@ -746,7 +734,7 @@ $Lambda$, FNF, JNF
 
     $Gamma := (u,v) mapsto q(u+v) - q(u) - q(v)$ ist Bilinear
 ]
-$q_gamma(u) = gamma(u, u)$
+$q_gamma (u) = gamma(u, u)$
 
 #lemma[
     $"char"(K) eq.not 2$
@@ -756,7 +744,7 @@ $q_gamma(u) = gamma(u, u)$
 
 $dim(Q F(V)) = 1/2n (n+1)$
 - Symmetrische Bilinearform ist durch Werte auf der Diagonalen der
-Darstellungsmatrix festgelegt
+    Darstellungsmatrix festgelegt
 - jede symm. Matrix ist kongruent zu einer Diagonalmatrix
 
 #lemma[
@@ -772,19 +760,19 @@ Darstellungsmatrix festgelegt
     $
 ]
 
-== Relle Vektorräume
+=== Relle Vektorräume
 Ab jetzt $V$ $RR$-VR, $gamma in Bil_"sym" (V,V)$
 #theorem[
     - $V$ besitzt $gamma$-OB mit
-        $calm_(B_V^* <- B^V) (gamma) = diag(bb(1)_(n_+)bb(1)_(n_(-))0_(n_0)) quad (*)$
+        $calm_(B_V^* <- B^V) (gamma) = diag(bb(1)_(n_+)bb(1)_(n_(-))0_(n_0)) quad (#text(fill: red)[$star$])$
     - $"signature"(gamma) := (n_+, n_(-), n_0)$
 ]
 #theorem("Sylvester")[
     $A in RR^(n times n)$ sym. $exists T in RR^(n times n)$, $T$ regulär mit
-    $T^T A T = (*)$
+    $T^T A T = (#text(fill: red)[$star$])$
 ]
 
-== Innenprodukte
+=== Innenprodukte
 
 #definition("Postiv Definit")[
     $gamma(v, v) > 0 forall v in V \\ {0}$
@@ -799,7 +787,7 @@ Ab jetzt $V$ $RR$-VR, $gamma in Bil_"sym" (V,V)$
 ]
 
 #lemma[
-    $gamma$ pos. defin $=> gamma^(2)$ bijektiv.
+    $gamma$ pos. defin $=> gamma^((2))$ bijektiv.
 ]
 
 #theorem("Cauchy Schwarz")[$gamma(u, v)^2 <= gamma(u, u) gamma(v, v)$]
@@ -819,7 +807,7 @@ $abs(norm(u) - norm(v)) <= norm(u - v)$
     $angle (U,v) := arccos (gamma(u, v)/(norm(u)norm(v)))$
 ]
 #lemma("Gram Schmidt")[
-    $u_j <- v_j - sum_(i=1)^(j-1) gamma(v_j, u_i)/gamma(u_i, u_i) u_i$
+    $ u_j <- v_j - sum_(i=1)^(j-1) gamma(v_j, u_i)/gamma(u_i, u_i) u_i $
 ]
 
 #definition("Isometrisch/Orthogonaler Hom.")[
@@ -828,7 +816,7 @@ $abs(norm(u) - norm(v)) <= norm(u - v)$
     - $norm(f(v))_gamma_2 = norm(v)_gamma_1$
     - $norm(f(v_1) - f(v_2))_gamma_2 = norm(v_1 - v_2)_gamma_1$
 ]
-isometrische Homomorphismen sind *injektiv*
+isometrische Homs sind *injektiv*
 
 $Lambda(f) subset.eq {plus.minus 1}$
 
@@ -846,18 +834,23 @@ $Lambda(f) subset.eq {plus.minus 1}$
 
 $S O$ mit $det(f) = 1$
 
+== Was mache ich wenn ich nicht weiter weiß?
++ #text(red)[*Aufgabenstellung lesen*]
++ Überlegen was die Objekte bedeuten (auf dem Cheatsheet gucken und schön
+    jufschreiben)
++ Überlegen was die Objekte für Eigenschaften haben
++ Beweis schreibt sich von selber hin
++ Stoßgebet und zu Schritt 1.
+
+#figure(
+    image("nico.png", width: 58%),
+    caption: "\"Vielleicht bist du das Problem?\"",
+)
 
 
 
 
 
 
-
-
-
-TODO bei JNF gl. 38.19
-
-
-TODO die abbildung $f mapsto f^*$ ist inj und linear (Satz 21.6)
 
 
