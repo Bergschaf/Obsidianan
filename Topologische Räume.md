@@ -4,6 +4,14 @@ auf ${} X$, wenn gilt:
 - $U, V in cal(T) => U inter V in cal(T)$
 - $forall I, U_i in cal(T) forall i in I => union.big_(i in I) U_i in cal(T)$
 
+Beispiel:
+
+$U_i = (0, 1+ 1/i)$
+
+$(1/n)_(n in NN)  subset (0,1)$
+
+
+
 ## Kompaktkeit
 Sei $(X,d)$ ein [[Metrischer Raum]] und $K subset X$
 

@@ -1,8 +1,9 @@
 > [!definition] **Norm**: 
 > $norm(dot) : X -> RR$  für die gilt
-> - **Homogen**: $norm(alpha dot x) = abs(alpha) dot norm(x)$
+> - **Absolut Homogen**: $norm(alpha dot x) = abs(alpha) dot norm(x)$
 > - **Definit**: $norm(x) >= 0 and norm(x) = 0 <=> x = 0$
 > - **Dreiecksungleichung** $norm(x+y) <= norm(x) + norm(y)$
+
 
 
 > [!Definition] Normäquivalenz

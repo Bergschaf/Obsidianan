@@ -73,3 +73,11 @@ Offener Ball vom Radius $r$ um $x_0$: $B_r (x_0) := {x in X | d(x_0 , x) < r }$
 $U subset X$.
 $$ U in cal(T)(X) <=> forall x in U, exists epsilon > 0, B_epsilon (x) subset U$$
 Die Axiome sind erfüllt. Beweis: Ranacher
+
+$partial U = "closure"(U) \\ U°$
+
+$"closure"(U) = inter.big_(U subset C)$
+
+
+$U°
+

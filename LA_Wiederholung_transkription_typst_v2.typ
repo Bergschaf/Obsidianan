@@ -8,18 +8,18 @@
     paper: "a4", // A4 paper
     margin: (
         // tight margins
-        top: 0.2cm,
-        bottom: 0.2cm,
-        left: 0.2cm,
-        right: 0.2cm,
+        top: 0.5cm,
+        bottom: 0.5cm,
+        left: 0.5cm,
+        right: 0.5cm,
     ),
     columns: 4, // three columns to pack more text
 )
 
-#set columns(gutter: 0.3em)
+#set columns(gutter: 1em)
 #set text(
     font: "Libertinus Serif", // readable serif
-    size: 8pt, // small but legible
+    size: 7.5pt, // small but legible
 )
 
 #set par(
