@@ -99,7 +99,7 @@ Beweis:
 
 
 > [!lemma]
-> $U subset RR^d$ offen, $x in U$, $y in.not U$. Dann enthält $|x,y| = { (1-t)x + t y : 0 <= t <= 1}$ (Strecke von x nach y).
+> $U subset RR^d$ offen, $x in U$, $y in.not U$. Dann enthält $|x,y| = { (1-t)x + t y : 0 <= t <= 1}$ (Strecke von x nach y) einen Randpunkt von $U$
 > (Mit $(1-t)x + t y =: gamma(t)$)
 
 Beweis:
@@ -108,6 +108,34 @@ Beweis:
 - $gamma(T) in.not U$ da: 
 	- Falls $T = 1$ ist $gamma(T) = y in.not U$
 	- Falls $T < 1$ und $gamma(T) in U$, dann auch: $gamma(T + delta) in U$ für $delta$ klein (Weil $U$ offen ist)
-- 
+- Also: $gamma(T)$ ist Randpunkt von $U$, denn jede Umgebung von $gamma(T) enthält $gamma(T) in.not U$ und $gamma(T - delta) in U$ -> basst 
+
+> [!lemma]
+> $A subset RR^d$ bel. $C subset RR^d$ konvex, $A inter C eq.not emptyset$.
+> Dann gilt enteder
+> - $C subset A^°$
+> - oder $C inter partial A eq.not emptyset$
+
+Bew:
+- (i) und (ii) nicht gleichzeitig richtig
+- Annahme: (i) ist falsch
+	Fall 1: $A inter C subset partial A inter C$
+	Fall 2: $exists x in A^° inter C subset A^°$ und $exists y in C \\ A^° (y in.not A^°)$ 
+	-> $|x,y| in C$ enthält nach Lemme vorher einen Randpunkt von $A$
 
 
+> [!Satz]
+> $A,B subset RR^d$ beschränkt.
+> - $lambda_* (A) + lambda^* (partial A) = lambda^* (A)$
+> - $lambda^* (A union B) <= lambda^* (A) + lambda^* (B)$ ($lambda^*$ ist subadditiv)
+> - $A^° inter B^° = emptyset => lambda_* (A union B) >= lambda_* (A) + lambda_* (B)$
+
+Beweis:
+1. $Q in W^n (overline(A))$ konvex
+	-> Lemma vorher: entweder:
+	$Q in W_n (A^°)$ oder $Q in W^n (partial A)$
+	-> $"vol"_d ((A^°)_n) + "vol"_d ((partial A)^n) = "vol"_d (overline(A)^n)$
+	-> Für $n -> infinity$: $"vol"_d ((A^°)_n) = lambda_*(A)$
+	(TODO des andere konvergiert auch)
+	-> $lambda^* (overline(A)) = lambda^*(A)$
+	=> $lambda_* (A) + lambda^* (partial A) = lambda_*(A)$()
