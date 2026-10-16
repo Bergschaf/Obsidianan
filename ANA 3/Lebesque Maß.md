@@ -59,15 +59,42 @@ Aussage 1.
 	finde Quader $tilde(Q_1), dots, tilde(Q_m)$ mit $S_a = S_i union tilde(Q_1) union dots$
 	-> $"vol"_d (S_i) <= "vol"_d (S_a)$
 	-> supremum und infimum nehmen -> ungleichung bleibt bestehen
+$
+Aussage 3.
 
 
 
+Kacheln eines Dreiecks:
+$sum_(n = 0)^infinity 2^n * ((1/2)^n)^2 = sum_(n = 1)^infinity 2^n * (1/2)^(2n) = 1/2$
+
+Allgemein:
+Zu $n in NN_0$ betr. Würfel $Q = 10^(-n) (p + w)$ $p in ZZ^d$ $W = [0,1]^d$
+Nenne $Q$ **Würfel n-ter Stufe**
+
+Zu beschr. $A in RR^d$ betrachte
+$W_n (A) := {Q : Q subset A "Würfel nter Stufe"}$
+$W^n (A) := {Q : Q inter A eq.not emptyset "Würfel nter Stufe"}$
+
+$$ union.big_(Q in W_n (A)) Q subset union.big_(Q in W_(n+1) (A)) Q subset A subset union.big_(Q in W^(n+1) (A)) Q subset union.big_(Q in W^(n)) Q $$
+Sei $A_n := W_n (A)$ und $A^n := W^n (A)$
+
+$\# W_n (A) 10^(-n d) =  "vol"_d (A_n) <= lambda_* (A) <= lambda^* (A) <= "vol"_d (A^n) = \# W^n (A) 10^(-n d)$
+
+> [!lemma]
+> $A in RR^d$ beschränkt
+> Dann gitl:
+> $a_n := "vol"_d (A_n) arrow.tr lambda_* (A)$, $b_n := "vol"_d (A^n) arrow.br lambda^* (A)$ für $n -> infinity$ 
+
+Beweis:
+- $(a_n)_n$ monoton wachsend und nach oben durch $lambda_* (A) < infinity$ beschränkt
+-> $a = lim_(n -> infinity) a_n <= lambda_* (A)$
+- zu zeigen: $a >= lambda_* (A)$
+- zu $epsilon > 0$ finde $S in cal(S)_i (A)$ mit $lambda_* (A) - "vol"_d (S) < epsilon/2$
+	$S = Q_1 union dots union Q_k$ (paarweise disjunkt bis auf Hyperflächen)
+	Für $n_0$ hinreichend groß verkleinere die $Q_k$ zu $tilde(Q_k)$ mit Eckpunkten in $10^(-n_0) ZZ^d$
+	und $"vol"_d (tilde(Q_1) union dots union tilde(Q_k)) >= "vol"_d (S) - epsilon /2$
+	$tilde(Q_1) union dots union tilde(Q_k) = tilde(S) subset A_n_0$ -> $"vol"_d(A_n_0) >= "vol"_d (tilde(S)) >= lambda_* (A) - epsilon$
+	-> $a_n >= lambda_* (A) - epsilon quad forall n >= n_0$
+	Analog: $b_n -> lambda^* (A)$
 
  
- 
- 
- 
- 
-
-
-
