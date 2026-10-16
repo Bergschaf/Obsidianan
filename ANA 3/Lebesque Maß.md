@@ -137,5 +137,12 @@ Beweis:
 	-> $"vol"_d ((A^°)_n) + "vol"_d ((partial A)^n) = "vol"_d (overline(A)^n)$
 	-> Für $n -> infinity$: $"vol"_d ((A^°)_n) = lambda_*(A)$
 	(TODO des andere konvergiert auch)
-	-> $lambda^* (overline(A)) = lambda^*(A)$
-	=> $lambda_* (A) + lambda^* (partial A) = lambda_*(A)$()
+	-> $lambda^* (overline(A)) = lambda^*(A)$$
+	=> $lambda_* (A) + lambda^* (partial A) = lambda_*(A)$
+
+
+> [!Satz]
+> $A subset RR^d$ beschr. Dann ist $A$ Jordan-Messbar, gdw. $lambda^* (partial A) = 0$
+
+Bew.
+Aussage 1 aus dem oberen Satz
