@@ -50,8 +50,15 @@ $ Q = [a_1,b_1] times dots times [a_d, b_d]$ (achsenparalleler) kompakter Quader
 > 5. Jede Jordan-Nullmenge ist Jordan-Messbar
 > 6. $lambda_* (A^°) = lambda_* (A)$, $lambda^* (A) = lambda^* (overline(A))$
 
-Beweis: trivial
-
+Beweis: 
+Aussage 1.
+- $A = emptyset$ -> trivial
+- $exists x in A$, $S = {x} in S_i$ (trivialer Quader) -> $lambda_*(A) > "vol"_d ({x}) > 0$
+- A beschränkt -> $exists r in RR, A subset B_r subset [-r,r]^d$ -> $lambda^*(A) < "vol"_d ([-r,r]^d) < infinity$
+- $S_i in cal(S)_i (A), S_a in cal(S)_a (A)$ -> $S_i subset A subset S_a$
+	finde Quader $tilde(Q_1), dots, tilde(Q_m)$ mit $S_a = S_i union tilde(Q_1) union dots$
+	-> $"vol"_d (S_i) <= "vol"_d (S_a)$
+	-> supremum und infimum nehmen -> ungleichung bleibt bestehen
 
 
 
