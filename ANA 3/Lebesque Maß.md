@@ -146,3 +146,16 @@ Beweis:
 
 Bew.
 Aussage 1 aus dem oberen Satz
+
+> [!Satz]
+> $A,b subset RR^d$ Jordan messbar. Dann sind auch 
+> - $A union B$
+> - $A inter B$
+> - $A \\ B$
+> Jordan messbar.
+
+Beweis:
+alle beschränkt. $partial A(A union B) subset partial A union partial B$ -> (Subadditivität) $lambda^* (partial(A union B)) <= lambda^* (partial A) + lambda^* (partial B)) = 0$
+analog bei den anderen beiden
+
+ 
