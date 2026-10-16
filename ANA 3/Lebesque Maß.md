@@ -97,4 +97,17 @@ Beweis:
 	-> $a_n >= lambda_* (A) - epsilon quad forall n >= n_0$
 	Analog: $b_n -> lambda^* (A)$
 
- 
+
+> [!lemma]
+> $U subset RR^d$ offen, $x in U$, $y in.not U$. Dann enthält $|x,y| = { (1-t)x + t y : 0 <= t <= 1}$ (Strecke von x nach y).
+> (Mit $(1-t)x + t y =: gamma(t)$)
+
+Beweis:
+- $B_epsilon (x) subset U$ für $epsilon > 0$ hinreichend klein -> für hienreichend kleine $t$ liegt $gamma(t) in U$
+- $T := sup {t in [0,1], |x,gamma(t)| subset U}$
+- $gamma(T) in.not U$ da: 
+	- Falls $T = 1$ ist $gamma(T) = y in.not U$
+	- Falls $T < 1$ und $gamma(T) in U$, dann auch: $gamma(T + delta) in U$ für $delta$ klein (Weil $U$ offen ist)
+- 
+
+
