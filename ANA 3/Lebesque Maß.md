@@ -158,4 +158,4 @@ Beweis:
 alle beschränkt. $partial A(A union B) subset partial A union partial B$ -> (Subadditivität) $lambda^* (partial(A union B)) <= lambda^* (partial A) + lambda^* (partial B)) = 0$
 analog bei den anderen beiden
 
- 
+ lamba
