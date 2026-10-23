@@ -17,11 +17,13 @@ Wer sollte entscheiden, welcher Bereich der Grundlagenforschung (den wir nicht v
 
 Wie kann man einschätzen, welche (mathematische) Grundlagenforschung sinnvoll ist, wenn man sie nicht versteht.
 
-
 # Vortrag
 ## TODO Einleitung
+	Heute wollen wir drüber reden, wie man Forschungsgelder für Grundlagenforschung verteilen sollte.
 	Ziel formulieren
-	Grundlagenforschung definieren (mit Beispiel CERN)
+	Mit Grundlagenforschung meine ich hier z.B. Forschung in der Mathematik oder Physik die keine direkte Praktische Anwedung hat
+		z.B. Teilchenbeschleuniger CERN um neue Physik zu finden
+		oder neue Gebiete der Mathematik
 ## Persönliche Relevanz
 	Noa in Bonn, promoviert in der Mathematik
 	Ich hab ihn letztes Jahr besucht und er hat mir grob erklärt was er macht 
@@ -51,11 +53,8 @@ TODO Überleitung
 - DFG oder andere Projektbezogene Förderungen 
 - z.B. ERC grants
 
-TODO wie viel förderung gibt es
-	TODO zahlen (wie viel Fördung gibt es, wie viele bekommen keine Förderung)
 
 
-TODO rausfinden wie es in echt gemacht wird
 Beispiel: Wie werden ERC Grants vergeben:
 	"Proposals are evaluated by selected international peer reviewers who assess them on the basis of excellence as the sole criterion. It will be applied to the evaluation of both the research project and the Principal Investigator in conjunction."
 -> mehrere Gruppen von Wissenschaftlern (ausgewählt basierend auf wissenschaftlichen Ruf) sortieren und ranken die Projekte
@@ -71,6 +70,13 @@ Beispiel: Wie werden ERC Grants vergeben:
 	Ausgang ist unklar, keiner kann garantieren ob es klappt
 	Nutzen ist schwierig abzuschätzen/gegeneinander abzuwiegen
 
+## TODO ggf ohne Faktoren die man berücksichten könnte 
+	- Finanzielle Sicherheit /Planungsischerheit für Forscher
+	- Gesellschaftlicher Nutzen
+	- Wissenschaftliche "Qualität"
+	- Chancengleichheit
+	- Effizienz des Auswahlsystems
+	- Potenzial für neue Erkenntnisse und Durchbrüche
 ### Verschiedene Ansätze um zu Entscheiden wer was bekommt? (TODO Vor und Nachteile genauer ausarbeiten)
 	- Erwarteter (parkatischer/gesellschaftlicher) Nutzen
 		- Vorteil: 
@@ -107,26 +113,22 @@ Beispiel: Wie werden ERC Grants vergeben:
 			- Schwierig für neue/unbekannte, man müsste sich lang in 
 			 existierenden Arbeitsgruppen aufhalten
 			 - neue innovationen und Ideen haben es schwerer
-## Faktoren die man berücksichten könnte (TODO das vor die Ansätze)
-	- Finanzielle Sicherheit /Planungsischerheit für Forscher
-	- Gesellschaftlicher Nutzen
-	- Wissenschaftliche "Qualität"
-	- Chancengleichheit
-	- Effizienz des Auswahlsystems
-	- Potenzial für neue Erkenntnisse und Durchbrüche
 
 ## Zusammenfassung
-	
+	TODO
 
 ## Fazit:
 
 Was will man fragen??
+Ziel der Diskussion (Überblick):
+	Am Ende wollen wir uns eine stratergie überlegen wie man am besten FOrschungsgelder verteilen könnte
 
-- trivial wo leute nochmal rekapitulieren können
-- coole frage???
-- das mit Lotterie
-- backup 
-- kanonische Frage
+
+### Fragen
+- Welche Faktoren sind euch persönlich am wichtigsten bei der Verteilung von Forschungsgeldern?
+- Was ist fairer, Lotterie oder Expertenurteil?
+- Wenn ihr über ein großes Forschungsbudget verfügen würdet, welche Verteilugnsstrategie würdet ihr verwenden?
+- Angenommen wir könnten jedem Projekt (durch ein magisches Orakel) magisch einen score zuweisen wie viel praktischen Nutzen es hat, wie würde das dann euere Entscheidung beeinflussen?
 ## Fragen:
 - **Sollte jeder Wissenschaftler eine Sichere Finanzierung erhalten?  (najo)
 	 (unabhängig von den Resultaten??)**
@@ -157,7 +159,8 @@ Was will man fragen??
 
 - Wenn ihr ein Forschungsbudget zur Verfügung hättet, wie würdet ihr es Verteilen? (krrrrocha)
 	- Mein Ansatz:
-		- Fokussieren auf ein Fachgebiet (oder aufteilen) -> Vergleich zwischen Fachgebieten schwierig
+		- Fokussieren auf ein Fachgebiet (oder aufteilen) -> Vergleich zwischen Fachgebieten schwierig 
+			- zwischen groß klein und mittel aufteilen 
 		- Idee: Jede Förderrunde hat ein Ziel (z.B. Klimawandel, Batterietechnologie, Quantenphysik)
 		- Expertengruppe wählt förderungswürdige Projekte aus ohne Begrenzung der Anzahl (Fachspezfische Experten werden zu rate gezogen)
 		- Lotterie wenn es zu viele gute projekte gibt

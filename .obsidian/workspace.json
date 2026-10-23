@@ -115,7 +115,8 @@
               "title": "Studienstiftung"
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -292,10 +293,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dc3e0b177e553322",
+  "active": "85bee616d6e10272",
   "lastOpenFiles": [
-    "Studienstiftung.md",
     "ANA 3/Lebesque Maß.md",
+    "Studienstiftung.md",
     "Anfangswertproblem Existenz von Lösungen.md",
     "Theo Cheatsheet TODO.md",
     "Skalarprodukt.md",

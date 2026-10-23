@@ -246,7 +246,7 @@ Für $A,B subset Omega$ gilt $B = (B inter A) union (B \\ A)$
 > - $emptyset in cal(F)$
 > - $A_1, A_2, dots in cal(F) => union.big_(n >=1 ) A_n in cal(F)$
 > - $A in cal(F) => A^c in cal(F)$
-> - 
+
 
 
 
