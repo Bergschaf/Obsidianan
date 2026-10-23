@@ -159,3 +159,96 @@ alle beschränkt. $partial A(A union B) subset partial A union partial B$ -> (Su
 analog bei den anderen beiden
 
  lamba
+
+
+> [!Definition]
+> $Omega eq.not emptyset$ Grundmenge $R subset cal(P)(Omega)$ heißt **Ring** über $Omega$, falls
+> - $emptyset in R$
+> - $A union B in R quad forall A,B in R$
+> - $A \\ B in R quad forall A,B in R$
+> - Ist zusätzlich $Omega in R$, so heißt $R$ **Algebra** über $Omega$.
+
+> [!Satz] Für Jordan-messbare $A,B in RR^d$ glt:
+> - $lambda (A union B) <= lambda(A) + lambda(B)$
+> - $A^° inter B^° => lambda(A union B) = lambda(A) + lambda(B)$
+> - $A subset B => lambda(B) = lambda(A) + lambda(B \ A)$
+
+...
+
+
+> [!Definition] $mu -> R [0, infinity]$ auf einem Ring $R subset cal(P)(Omega)$ heißt **Inhalt** auf $R$, falls
+> - $mu(emptyset) = 0$
+> - $mu(A union B) = mu(A) + mu(B) quad forall A, B in R, A inter B = emptyset$
+
+
+
+## Das äußere Lebesquemaß
+
+
+
+nutze halboffene Quader
+$(a, b) = (a_1 , b_1] times dots times (a_d ,b_d] subset RR^d$
+
+> [!Definition] Zu $A subset RR^d$ nenne
+> - $l^*_d (A) := inf { sum_(k = 1)^infinity "vol"_d (Q_k) : Q_1, Q_2, dots "halboffene Quader mit" A subset union_(k >= 1) Q_k}$
+> das **äußere (d-dim) Lebesquemaß von A**
+
+
+> [!Satz]
+> Für $d in NN$ gilt
+> - $L_d^* (emptyset) = 0$
+> - $A subset B subset RR^d => l_d^* (A) = l_d^*(B) quad "Monotonie"$
+> - $A_1, A_1, dots subset RR^d => l_d^* (union.big_(n >= 1) A_n) <= sum_(n=1)^infinity l_d^* (A_n) quad sigma-"Subadditivität"$
+
+
+
+> [!Definition] 
+> $mu^* : cal(P) (Omega) -> [0, infinity]$ ($Omega eq.not emptyset$ Grund menge)
+> heißt **äußeres Maß**, falls 
+> - $mu^* (emptyset) = 0$
+> - $mu^*$ ist monoton und $sigma$-Subadditiv
+
+> [!Satz]
+> - $A subset R^d$ beschr. => $lambda_* (A) <= l_d^*(A) <= lambda^* (A)$
+> - $Q in RR^d$ beschr. Quader => $l_d^* (Q) = "vol"_d (Q)$
+> - $A subset RR^d$, $x in RR^d$ => $l_d^* (x + A) = l_d^*(A)$
+
+
+## Lebesque-messbare Mengen
+
+Für $A,B subset Omega$ gilt $B = (B inter A) union (B \\ A)$
+
+> [!Definition] $A subset RR^d$ heißt **Lebesque-messbar**, falls für alle $B in RR^d$
+> - $L^*_d (B) = l_d^* (B inter A) + l_d^* (B inter A^c)$ gilt
+
+
+
+> [!lemma] Jede menge $A subset RR^d$ mit $l^*_d(A) = 0$ ist Lebesque-messbar
+
+> [!lemma] Jede Jordan-messbare Menge ist Lebesque-messbar.
+> 
+
+> [!lemma] 
+> Sind $A_1, A_2 subset RR^d$ Lebesque-messbar, so sind auch $A_1 union A_2, A_1 inter A_2$ und $A_1 \\ A_2$ Lebesque messbar.
+> 
+
+> [!lemma] 
+> $l^*_d$ ist additiv auf Lebesque-messbaren Mengen
+
+> [!Satz] $A_1, A_2 dots subset RR^d$ L-mesbar => $union_(n>=1) A_n$ L-messbar
+
+
+-> Korrolar: Der Durchschnitt abzählbar vieler Lebesque-messbarer Mengen ist Lebesque-messbar 
+(Beweis: De-Morgan )
+
+> [!Definition] $sigma$-Algbra
+> $Omega eq.not emptyset$, $cal(F) subset cal(P)(Omega$ heißt $sigma$-Algebra (über $Omega$), falls
+> - $emptyset in cal(F)$
+> - $A_1, A_2, dots in cal(F) => union.big_(n >=1 ) A_n in cal(F)$
+> - $A in cal(F) => A^c in cal(F)$
+> - 
+
+
+
+
+
