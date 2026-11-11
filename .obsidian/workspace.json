@@ -22,6 +22,34 @@
             }
           },
           {
+            "id": "d5f961e7ade037bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ANA 3/Lebesque-messbare Funktionen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lebesque-messbare Funktionen"
+            }
+          },
+          {
+            "id": "f676bfaddbf36cdd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lebesque Integral.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lebesque Integral"
+            }
+          },
+          {
             "id": "977a9cb8d0510891",
             "type": "leaf",
             "state": {
@@ -109,14 +137,14 @@
               "state": {
                 "file": "Studienstiftung.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Studienstiftung"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,8 +213,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "701a8f291b0fac63",
@@ -293,8 +320,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "85bee616d6e10272",
+  "active": "f676bfaddbf36cdd",
   "lastOpenFiles": [
+    "ANA 3/Lebesque-messbare Funktionen.md",
+    "Lebesque Integral.md",
     "ANA 3/Lebesque Maß.md",
     "Studienstiftung.md",
     "Anfangswertproblem Existenz von Lösungen.md",
@@ -320,8 +349,6 @@
     "Multiindex Notation.md",
     "Differenzierbare Funktionen.md",
     "Stetige Funktionen auf Kompakten Mengen.md",
-    "Topologische Räume.md",
-    "Gram-Schmidt Verfahren.md",
     "fonts/Iosevka.ttf",
     "fonts/SGr-Iosevka-Thin.ttc",
     "fonts/SGr-Iosevka-SemiBold.ttc",

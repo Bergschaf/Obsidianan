@@ -247,6 +247,33 @@ Für $A,B subset Omega$ gilt $B = (B inter A) union (B \\ A)$
 > - $A_1, A_2, dots in cal(F) => union.big_(n >=1 ) A_n in cal(F)$
 > - $A in cal(F) => A^c in cal(F)$
 
+> [!Satz] 
+> $A_1, A_2, dots in cal(m)_d$ paarweise disjunkt.. Dann
+> $$ l_d^* (union.big_(n=1)^infinity A_n) = sum_(n=1)^infinity l_d^* (A_n) $$
+
+
+> [!Satz] Alle offenen und abgeschlossenen Teilmengen von $RR^d$ sind Lebesque messbar.
+
+
+
+
+
+## Vollständiger Maßraum
+
+> [!Definition] $(Omega, cal(F), mu)$ Maßraum mit
+> $$ forall A,N in cal(F), mu(N) = 0, A subset N => A in cal(F) ("und" mu(A) = 0) $$
+> Dann hei0t $mu$ **vollständig**
+
+
+> [!Satz] $(Omega, cal(F), mu)$ Maßraum. 
+> Dann ist $$hat(cal(F)) = {A union B | A in cal(F), B subset N in cal(F) "mit" mu(N) = 0}$$ eine $sigma$-Algebra mit $cal(F) < cal(hat(F))$.
+> und $hat(mu) : hat(cal(F)) -> [0,infinity]$ mit $$ hat(mu)(A union B) = mu(A)$$ für $b subset N, A,N in cal(F), mu(N) = 0$ ein **vollständiges** Maß.
+
+> [!Satz] 
+> Für $A subset RR^d$ sind äquiv:
+> - $A in cal(m)_d$
+> - zu $epsilon > 0$ $exists U supset A$ offen mit $l_d^*(U \\A) <= epsilon$
+> - zu $epsilon > 0 exists c subset A $ abeschlossen mit $L^*_d (A \\C) <= epsilon$
 
 
 
