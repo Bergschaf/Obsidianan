@@ -51,10 +51,58 @@ $f : Omega -> [0,infinity]$ messbar
 
 
 
+## Messbare Funktionen
+> [!Definition]
+> $f : Omega -> overline(RR)$
+> $$ integral_Omega f dif l_d :=  integral_Omega f^+ dif l_d - integral_Omega f^- dif l_d $$
+> - Falls Differenz in $overline(RR)$ definiert: **Quasiintegrierbar**
+> - Falls Differenz in $RR$: **Lebesque-Integrierbar**
 
 
 
 
 
+## Der Raum $L^1(Omega)$
 
 
+
+
+> [!Definition] Vektorraum der Lebesque-intergierbaren Funktionen
+> $$ cal(L)^1 ((Omega,cal(M)_d, l_d); RR) = cal(L)^1 (Omega) := {f : Omega -> RR : f "Lebesque integrierbar"} $$
+> 
+
+> [!Lemma]
+> $$ abs(dot)_1 : cal(L)^1 (Omega) -> [0, infinity) := f mapsto integral_Omega abs(f) dif l_d  $$  
+> definiert eine ==Halbnorm==:
+> - $abs(0_(cal(L)^1))_1 = 0$
+> - $abs(a f)_1 = a abs(f)_1$
+> - $abs(f + g)_1 <= abs(f)_1 + abs(g)_1$
+
+
+
+
+Äquivalenzrelation: $$f tilde g <=> l^*_d ({f eq.not g}) = 0$$
+> [!lemma]
+> $f : Omega -> overline(RR)$ integrierbar und $g tilde f$, dann ist $g$ integrierbar und es gilt: 
+> - $abs(f - g)_1 = 0$
+> - $integral_Omega f dif l_d = integral_Omega g dif l_d$
+
+Es folgt:
+
+$$ f tilde g <=> abs(f - g)_1 $$
+
+$f, g : Omega -> overline(RR)$ Lebesque integrierbar
+$tilde(f) tilde f$
+$tilde(g) ~ g$
+$a in RR$
+> [!lemma]
+> - $a tilde(f) ~ a f$
+> - $$ f bold(1)_{abs(f) < infinity} + g bold(1)_{abs(g) < infinity} tilde tilde(f) bold(1)_{abs(tilde(f)) < infinity} + tilde(g) bold(1)_{abs(tilde(g)) < infinity}$$
+
+
+> [!Definition] Vektorraum der Äquivalenzklassen intergrierbarer numerischer Funktionen auf $Omega$
+> $$L^1 (Omega) := {[f] : f : Omega -> overline(RR)} = cal(L)^1(Omega)\/~$$
+
+> [!Korollar] 
+> $$ norm(dot)_1 : L^1(Omega) -> [0, infinity) := [f] mapsto integral_Omega abs(f) dif l_d$$
+definiert eine ==Norm==
